@@ -1,0 +1,403 @@
+/*There should be no need to make any changes in this file.*/
+/*If you need to make any such changes, you have found a bug,*/
+/*an omission or have identified an additional requirement.*/
+/*In this case, please leave a comment in the repo or send me a pull request for this file.*/
+/*Please make sure you explain what you have changed and why.*/
+
+/*--Mobile Menu Bug Fix----------------------------------------------------------------*/
+body .page-content {
+    display: block;
+}
+
+/*--Body----------------------------------------------------------------*/
+html body {
+    background-color: var(--body-background-color, #fff);
+}
+
+/*--Typography----------------------------------------------------------------*/
+html body,
+body input,
+body select,
+body.btn-default,
+body textarea {
+    font-family: var(--font-family, Roboto, sans-serif);
+    color: var(--font-color, #6f6f6f);
+    font-size: var(--font-size, 14px);
+}
+
+/*--Buttons----------------------------------------------------------------*/
+button.btn-default,
+button.btn-default.filter,
+button.btn-default:focus,
+button.btn-default:focus:active {
+    background-color: var(--button-background-color, #39f);
+    border-color: var(--button-border-color, #2196f3);
+    color: var(--button-font-color, white);
+    box-shadow: var(--button-shadow1, 0 3px 6px rgba(0, 0, 0, 0.16)), var(--button-shadow2, 0 3px 6px rgba(0, 0, 0, 0.23));
+    font-size: var(--button-font-size, 14px);
+}
+
+button.btn-default:hover,
+button.btn-default:active:hover {
+    background-color: var(--button-hover-background-color, #1976d2);
+    color: var(--button-hover-font-color, white);
+    box-shadow: var(--button-hover-shadow1, 0 10px 20px rgba(0, 0, 0, 0.19)), var(--button-hover-shadow2, 0 6px 6px rgba(0, 0, 0, 0.23));
+}
+
+/*--Checkbox----------------------------------------------------------------*/
+.checkbox input[type='checkbox'],
+.checkbox-inline input[type='checkbox'] {
+    background-color: var(--checkbox-background-color, #fff);
+    border-color: var(--checkbox-border-color, #ccc);
+    border-width: var(--checkbox-border-width, 2px);
+}
+
+input[type=checkbox]:checked {
+    border-color: var(--checkbox-checked-tick-color, #39f);
+    background-color: transparent;
+}
+
+/*--CheckboxList----------------------------------------------------------------*/
+.check-box-list-container {
+    background-color: var(--checkboxlist-background-color, #f5f5f5);
+}
+
+.checkbox label,
+.checkbox-inline label {
+    font-size: var(--checkboxlist-checkbox-label-size, 15px);
+    color: var(--checkboxlist-checkbox-label-color, #6f6f6f);
+}
+
+/*--DataGrid----------------------------------------------------------------*/
+.data-grid-header input.data-grid-search-box {
+    color: var(---datagrid-searchbox-font-color, #919191);
+    background-color: var(--datagrid-searchbox-background-color, #f9f9f9);
+    border-bottom-color: var(--datagrid-searchbox-bottom-border-color, #1976d2);
+}
+
+.data-grid-header input.data-grid-search-box:focus {
+    border-bottom-color: var(--datagrid-searchbox-focus-bottom-border-color, #ffc60c);
+}
+
+.data-grid-header .data-grid-search-button {
+    background-color: var(--datagrid-searchbox-button-background-color, #3399ff);
+    background-image: var(--datagrid-searchbox-button-icon, url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2720%27%20height%3D%2720%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M20%2018l-5.2-5.2c1-1.4%201.5-3%201.5-4.7C16.3%203.6%2012.6%200%208.1%200S0%203.6%200%208.1c0%204.5%203.6%208.1%208.1%208.1%201.8%200%203.5-0.6%204.9-1.6l5.2%205.2L20%2018zM1.9%208.1c0-3.4%202.8-6.3%206.3-6.3%203.4%200%206.3%202.8%206.3%206.3%200%201.7-0.6%203.2-1.8%204.4%20-1.2%201.2-2.8%201.8-4.4%201.8C4.7%2014.4%201.9%2011.6%201.9%208.1z%27%20fill%3D%27rgba(255, 255, 255, 1)%27%2F%3E%3C%2Fsvg%3E"));
+    border-color: var(--datagrid-searchbox-button-border-color, #2196f3);
+}
+
+.data-grid-header .data-grid-search-button:hover,
+.data-grid-header .data-grid-search-button:active,
+.data-grid-header .data-grid-search-button:focus,
+.data-grid-header .data-grid-search-button:active:focus {
+    background-color: var(--datagrid-searchbox-button-hover-background-color, #1976d2);
+}
+
+.data-grid-header .data-grid-search-help-button {
+    background-image: var(--datagrid-searchbox-help-icon, url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%0A%09%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Aa%3D%22http%3A%2F%2Fns.adobe.com%2FAdobeSVGViewerExtensions%2F3.0%2F%22%0A%09%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-4.54%20-1.5%2024%2024%22%20enable-background%3D%22new%20-4.54%20-1.5%2024%2024%22%0A%09%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cdefs%3E%0A%3C%2Fdefs%3E%0A%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M9.146%2C15.639H5.531c-0.01-0.518-0.014-0.836-0.014-0.949c0-1.172%2C0.193-2.137%2C0.58-2.893%0A%09c0.389-0.756%2C1.162-1.607%2C2.326-2.553c1.162-0.945%2C1.857-1.564%2C2.084-1.855c0.35-0.465%2C0.525-0.975%2C0.525-1.533%0A%09c0-0.775-0.311-1.438-0.93-1.992C9.484%2C3.311%2C8.65%2C3.035%2C7.602%2C3.035c-1.012%2C0-1.857%2C0.287-2.539%2C0.865%0A%09C4.383%2C4.477%2C3.914%2C5.355%2C3.66%2C6.537L0%2C6.082c0.105-1.691%2C0.826-3.129%2C2.164-4.309C3.5%2C0.592%2C5.256%2C0%2C7.432%2C0%0A%09c2.287%2C0%2C4.105%2C0.598%2C5.459%2C1.793c1.352%2C1.195%2C2.027%2C2.588%2C2.027%2C4.176c0%2C0.879-0.248%2C1.711-0.746%2C2.496%0A%09c-0.494%2C0.785-1.557%2C1.854-3.182%2C3.205c-0.842%2C0.699-1.363%2C1.262-1.566%2C1.688C9.221%2C13.781%2C9.127%2C14.545%2C9.146%2C15.639z%20M5.531%2C21%0A%09v-3.986h3.984V21H5.531z%22%2F%3E%0A%3C%2Fsvg%3E"));
+}
+
+.data-grid-header .data-grid-export-button {
+    background-image: var(--datagrid-searchbox-export-icon, url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%0A%09%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Aa%3D%22http%3A%2F%2Fns.adobe.com%2FAdobeSVGViewerExtensions%2F3.0%2F%22%0A%09%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-3.734%20-1%2024%2024%22%20enable-background%3D%22new%20-3.734%20-1%2024%2024%22%0A%09%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cdefs%3E%0A%3C%2Fdefs%3E%0A%3Cpolygon%20fill%3D%22rgba(33, 150, 243, 1)%22%20points%3D%220%2C2.639%200%2C20.07%208.52%2C21.432%208.52%2C19.633%201.773%2C18.559%201.773%2C4.152%2014.758%2C2.078%2014.758%2C14.973%20%0A%0916.531%2C14.973%2016.531%2C0%20%22%2F%3E%0A%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M4.645%2C13.4l1.018-2.406c0.072-0.24%2C0.117-0.443%2C0.135-0.443h0.018c0.041%2C0.406%2C0.08%2C0.328%2C0.119%2C0.422%0A%09L6.947%2C13.4H8.52L6.705%2C9.5l1.764-3.836H6.992L6.057%2C8.107C5.965%2C8.406%2C5.904%2C8.514%2C5.871%2C8.92H5.854%0A%09C5.803%2C8.514%2C5.744%2C8.311%2C5.678%2C8.129L4.836%2C5.664H3.225l1.717%2C3.869L3.064%2C13.4H4.645z%22%2F%3E%0A%3Cpolygon%20fill%3D%22rgba(33, 150, 243, 1)%22%20points%3D%2213.201%2C17.465%2013.201%2C9.533%2010.934%2C9.533%2010.934%2C17.465%208.668%2C17.465%2012.068%2C22%2015.467%2C17.465%20%22%2F%3E%0A%3C%2Fsvg%3E"));
+}
+
+.data-grid-container table.table {
+    border-color: var(--datagrid-table-border-color, #ccc);
+}
+
+.data-grid-container table.table>thead>tr {
+    border-bottom-color: var(--datagrid-table-border-color, #ccc);
+    background-color: var(--datagrid-table-heading-row-background-color, #fff);
+}
+
+.data-grid-container table.table[data-sortable] th a {
+    color: var(--datagrid-table-heading-font-color, #1976d2);
+    border: none;
+    text-transform: var(--datagrid-table-heading-case, uppercase);
+}
+
+.data-grid-container table.table[data-sortable] th a:hover {
+    color: var(--datagrid-table-heading-font-hover-color, #999);
+}
+
+.data-grid-container table.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: var(--datagrid-table-odd-rows-background-color, #f9f9f9);
+}
+
+.data-grid-container table.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: var(--datagrid-table-even-rows-background-color, #fff);
+}
+
+.data-grid-container table.table>tbody>tr>td {
+    border-top-color: var(--datagrid-table-border-color, #ccc);
+}
+
+.data-grid-container table.table>tfoot>tr>td {
+    border-top-color: var(--datagrid-table-border-color, #ccc);
+}
+
+.data-grid-container .pagination>li>a {
+    font-size: var(--datagrid-table-pagination-font-size, 14px);
+    color: var(--datagrid-table-pagination-font-color, #9a9a9a);
+    background-color: var(--datagrid-table-pagination-background-color, #fff);
+}
+
+.data-grid-container .pagination>li:hover>a {
+    background-color: var(--datagrid-table-pagination-hover-background-color, #2196f3);
+    color: var(--datagrid-table-pagination-hover-font-color, #fff);
+    border-color: var(--datagrid-table-pagination-hover-border-color, #2196f3);
+}
+
+.data-grid-container .pagination>.active>a,
+.data-grid-container .pagination>.active>a:focus,
+.data-grid-container .pagination>.active>a:hover {
+    background-color: var(--datagrid-table-pagination-current-page-background-color, #1976d2);
+    color: var(--datagrid-table-pagination-current-page-font-color, #fff);
+    border-color: var(--datagrid-table-pagination-border-color, #ddd);
+}
+
+.data-grid-container div.selection-status-bar {
+    background-color: var(--datagrid-table-selection-status-bar-background-color, #1976d2);
+    color: var(--datagrid-table-selection-status-bar-font-color, #fff);
+    font-size: var(--datagrid-table-selection-status-bar-font-size, 14px);
+}
+
+.data-grid-container div.selection-status-bar a {
+    color: var(--datagrid-table-selection-status-bar-font-color, #fff);
+    font-size: var(--datagrid-table-selection-status-bar-font-size, 14px);
+}
+
+/*--DatePicker----------------------------------------------------------------*/
+.date-picker-container input {
+    color: var(--datepicker-textbox-font-color, #919191);
+    background-color: var(--datepicker-textbox-background-color, #f9f9f9);
+    border-bottom-color: var(--datepicker-textbox-bottom-border-color, #1976d2);
+}
+
+.date-picker-container input:focus {
+    border-bottom-color: var(--datepicker-textbox-focus-bottom-border-color, #ffc60c);
+}
+
+.date-picker-container .datepicker-btn {
+    background-color: var(--datepicker-textbox-button-background-color, #3399ff);
+    border-color: var(--datepicker-textbox-button-border-color, #2196f3);
+    background-image: var(--datepicker-textbox-button-icon, url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2720%27%20height%3D%2720%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cstyle%3E.a%7Bfill%3Argba(255, 255, 255, 1)%3B%7D%3C%2Fstyle%3E%3Crect%20x%3D%2713.3%27%20width%3D%271.5%27%20height%3D%272.6%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%274.6%27%20width%3D%271.5%27%20height%3D%272.6%27%20class%3D%27a%27%2F%3E%3Cpath%20d%3D%27M15.4%202.1v1.5H12.8V2.1H6.7v1.5H4.1V2.1H0V17.5h20V2.1H15.4zM1%2016.4V5.6h17.9v10.8H1z%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%272.1%27%20y%3D%277.2%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%276.2%27%20y%3D%277.2%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%2710.3%27%20y%3D%277.2%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%272.1%27%20y%3D%2710.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%276.2%27%20y%3D%2710.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%2710.3%27%20y%3D%2710.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%272.1%27%20y%3D%2713.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%276.2%27%20y%3D%2713.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%2710.3%27%20y%3D%2713.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%2714.4%27%20y%3D%277.2%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%2714.4%27%20y%3D%2710.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%2714.4%27%20y%3D%2713.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3C%2Fsvg%3E"));
+}
+
+.date-picker-container .datepicker-btn:hover {
+    background-color: var(--datepicker-textbox-button-hover-background-color, #1976d2);
+}
+
+.datepicker table tr td.active:active {
+    background-color: var(--datepicker-selectpopup-selecteddate-background-color, #2196f3);
+}
+
+/*--DropDown----------------------------------------------------------------*/
+body .drop-down-container select,
+body .drop-down-container select:focus {
+    background-color: var(--dropdown-background-color, #f9f9f9);
+    border-bottom-color: var(--dropdown-bottom-border-color, #1976d2);
+}
+
+/*--Label----------------------------------------------------------------*/
+body .label-container {
+    color: var(--label-color, #777);
+}
+
+/*--Link----------------------------------------------------------------*/
+a.btn-link,
+a.btn-link:hover {
+    color: var(--link-color, #1976d2);
+}
+
+/*--Menu----------------------------------------------------------------*/
+body .navbar-default,
+body .navbar-default .dropdown-menu {
+    background-color: var(--menu-background-color, #2196f3);
+    border-color: var(--menu-border-color, #2196f3);
+    color: var(--menu-font-color, #fff);
+}
+
+body .navbar-nav>li:hover,
+body .dropdown-menu>li:hover {
+    color: var(--menu-item-hover-font-color, #fff);
+    background-color: var(--menu-item-hover-background-color, #1976D2);
+}
+
+body .container:not(.mobile) .navbar-nav>li>a {
+    padding-top: var(--menu-item-top-padding, 15px);
+    padding-right: var(--menu-item-right-padding, 15px);
+    padding-bottom: var(--menu-item-bottom-padding, 15px);
+    padding-left: var(--menu-item-left-padding, 15px);
+}
+
+body .dropdown-menu>li>a {
+    padding-top: var(--menu-subitem-top-padding, 3px);
+    padding-right: var(--menu-subitem-right-padding, 20px);
+    padding-bottom: var(--menu-subitem-bottom-padding, 3px);
+    padding-left: var(--menu-subitem-left-padding, 20px);
+}
+
+body .container.mobile .nav .caret {
+    background-color: var(--menu-mobile-item-background-color, #1976d2);
+}
+
+body .navbar-default .navbar-toggle:focus,
+body .navbar-default .navbar-toggle:hover,
+body .navbar-left .navbar-toggle:focus,
+body .navbar-left .navbar-toggle:hover {
+    background-color: var(--menu-mobile-item-hover-background-color, #1976d2);
+}
+
+/*--panel----------------------------------------------------------------*/
+body .panel-default {
+    border-color: var(--panel-border-color, #ddd);
+}
+
+body .panel-default>.panel-heading {
+    background-color: var(--panel-heading-background-color, #f5f5f5);
+    padding: var(--panel-heading-topbottom-padding, 10px) var(--panel-heading-leftright-padding, 15px);
+}
+
+body .panel-heading span {
+    font-size: var(--panel-heading-font-size, large);
+    color: var(--panel-heading-font-color, #6f6f6f);
+}
+
+body .panel-body {
+    padding: var(--panel-body-padding-top, 5px) var(--panel-body-padding-right, 5px) var(--panel-body-padding-bottom, 15px) var(--panel-body-padding-left, 15px);
+}
+
+/*--RadioButtonList----------------------------------------------------------------*/
+body .radio-button-list-container {
+    background: var(--radio-button-list-background-color, #f5f5f5);
+}
+
+body input[type="radio"]~label {
+    border-color: var(--radio-button-list-item-border-color, rgb(51, 153, 255)) !important;
+    background-image: var(--radio-button-list-background, url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2022%2022%22%20version%3D%221.1%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2211%22%20r%3D%2210%22%20style%3D%22fill%3Argb(255,255,255)%3Bstroke-width%3A1%3Bstroke%3Argb(51, 153, 255)%3B%22%20%2F%3E%3C%2Fsvg%3E")) !important;
+}
+
+body input[type="radio"]:checked~label {
+    background-image: var(--radio-button-list-selected-background, url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2022%2022%22%20version%3D%221.1%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2211%22%20r%3D%2210%22%20style%3D%22fill%3Argb(255,255,255)%3Bstroke-width%3A1%3Bstroke%3Argb(51, 153, 255)%3B%22%20%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2211%22%20r%3D%226%22%20style%3D%22fill%3Argb(51, 153, 255)%3Bstroke-width%3A1%3Bstroke%3Argb(51, 153, 255)%3B%22%20%2F%3E%3C%2Fsvg%3E")) !important;
+}
+
+/*--TextBox----------------------------------------------------------------*/
+
+body .text-box-input,
+body .text-box-input:active {
+    color: var(--textbox-bottom-font-color, #919191);
+    background-color: var(--textbox-background-color, #f9f9f9);
+    border-bottom-color: var(--textbox-bottom-border-color, #1976d2);
+}
+
+body .text-box-input:focus {
+    border-bottom-color: var(--textbox-focus-bottom-border-color, #ffc60c);
+}
+
+body .show-password-icon,
+body .show-password-icon:hover {
+    background-image: var(--textbox-password-icon, url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M8%203.9c-6.7%200-8%205.1-8%205.1s2.2%204.1%207.9%204.1%208.1-4%208.1-4-1.3-5.2-8-5.2zM5.3%205.4c0.5-0.3%201.3-0.3%201.3-0.3s-0.5%200.9-0.5%201.6c0%200.7%200.2%201.1%200.2%201.1l-1.1%200.2c0%200-0.3-0.5-0.3-1.2%200-0.8%200.4-1.4%200.4-1.4zM7.9%2012.1c-4.1%200-6.2-2.3-6.8-3.2%200.3-0.7%201.1-2.2%203.1-3.2-0.1%200.4-0.2%200.8-0.2%201.3%200%202.2%201.8%204%204%204s4-1.8%204-4c0-0.5-0.1-0.9-0.2-1.3%202%200.9%202.8%202.5%203.1%203.2-0.7%200.9-2.8%203.2-7%203.2z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E"));
+}
+
+body .hide-password-icon,
+body .hide-password-icon:hover {
+    background-image: var(--textbox-hide-password-icon, url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M12.9%205.2l-0.8%200.8c1.7%200.9%202.5%202.3%202.8%203-0.7%200.9-2.8%203.1-7%203.1-0.7%200-1.2-0.1-1.8-0.2l-0.8%200.8c0.8%200.3%201.7%200.4%202.6%200.4%205.7%200%208.1-4%208.1-4s-0.6-2.4-3.1-3.9z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M12%207.1c0-0.3%200-0.6-0.1-0.8l-4.8%204.7c0.3%200%200.6%200.1%200.9%200.1%202.2%200%204-1.8%204-4z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M15.3%200l-4.4%204.4c-0.8-0.2-1.8-0.4-2.9-0.4-6.7%200-8%205.1-8%205.1s1%201.8%203.3%203l-3.3%203.2v0.7h0.7l15.3-15.3v-0.7h-0.7zM4%2011.3c-1.6-0.7-2.5-1.8-2.9-2.3%200.3-0.7%201.1-2.2%203.1-3.2-0.1%200.4-0.2%200.8-0.2%201.3%200%201.1%200.5%202.2%201.3%202.9l-1.3%201.3zM6.2%207.9l-1%200.2c0%200-0.3-0.5-0.3-1.2%200-0.8%200.4-1.5%200.4-1.5%200.5-0.3%201.3-0.3%201.3-0.3s-0.5%200.9-0.5%201.7c-0.1%200.7%200.1%201.1%200.1%201.1z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A"));
+}
+
+/*--UploadFile----------------------------------------------------------------*/
+body .upload-file-container {
+    color: var(--upload-file-box-font-color, #1976d2);
+}
+
+body .upload-file-container form {
+    border-color: var(--upload-file-box-border-color, #1976d2);
+    border-style: var(--upload-file-box-border-style, dashed);
+    border-width: var(--upload-file-box-border-width, 1px);
+}
+
+body .upload-file-container .single-file-upload-error-icon {
+    background-image: var(--upload-file-upload-status-error-icon, url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2032.526%2032.526%22%20style%3D%22enable-background%3Anew%200%200%2032.526%2032.526%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%2220px%22%20height%3D%2220px%22%3E%3Cpolygon%20points%3D%2232.526%2C2.828%2029.698%2C0%2016.263%2C13.435%202.828%2C0%200%2C2.828%2013.435%2C16.263%200%2C29.698%202.828%2C32.526%2016.263%2C19.091%20%20%2029.698%2C32.526%2032.526%2C29.698%2019.091%2C16.263%20%22%20fill%3D%22rgba(255, 73, 0, 1)%22%2F%3E%3C%2Fsvg%3E"));
+}
+
+body .upload-file-container .single-file-upload-filename,
+body .upload-file-container .single-file-file-name-container {
+    color: var(--upload-file-upload-status-font-color, #1976d2);
+    font-size: var(--upload-file-upload-status-font-size, 12px);
+}
+
+body .upload-file-container .progress-bar-success {
+    background-color: var(--upload-file-upload-status-color, red);
+}
+
+body .upload-file-container .single-file-upload-success-icon {
+    background-image: var(--upload-file-upload-status-success-icon, url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%20448.8%20448.8%22%3E%3Cpolygon%20points%3D%22142.8%2C323.85%2035.7%2C216.75%200%2C252.45%20142.8%2C395.25%20448.8%2C89.25%20413.1%2C53.55%20%20%20%22%20fill%3D%22rgba(51,153,255,1)%22%2F%3E%3C%2Fsvg%3E"));
+}
+
+body .upload-file-container .single-file-upload-delete-icon {
+    background-image: var(--upload-file-upload-status-success-delete-icon, transparent url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22753.23px%22%20height%3D%22753.23px%22%20viewBox%3D%220%200%20753.23%20753.23%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22rgba(51,153,255,1)%22%20d%3D%22M494.308%2C659.077c12.993%2C0%2C23.538-10.546%2C23.538-23.539V353.077c0-12.993-10.545-23.539-23.538-23.539%20%09s-23.538%2C10.545-23.538%2C23.539v282.461C470.77%2C648.531%2C481.314%2C659.077%2C494.308%2C659.077z%20M635.538%2C94.154h-141.23V47.077%20%09C494.308%2C21.067%2C473.24%2C0%2C447.23%2C0H306c-26.01%2C0-47.077%2C21.067-47.077%2C47.077v47.077h-141.23%20%09c-26.01%2C0-47.077%2C21.067-47.077%2C47.077v47.077c0%2C25.986%2C21.067%2C47.077%2C47.077%2C47.077v423.692%20%09c0%2C51.996%2C42.157%2C94.153%2C94.154%2C94.153h329.539c51.996%2C0%2C94.153-42.157%2C94.153-94.153V235.385%20%09c26.01%2C0%2C47.077-21.091%2C47.077-47.077V141.23C682.615%2C115.221%2C661.548%2C94.154%2C635.538%2C94.154z%20M306%2C70.615%20%09c0-12.993%2C10.545-23.539%2C23.538-23.539h94.154c12.993%2C0%2C23.538%2C10.545%2C23.538%2C23.539v23.539c-22.809%2C0-141.23%2C0-141.23%2C0V70.615z%20%09%20M588.461%2C659.077c0%2C25.986-21.066%2C47.076-47.076%2C47.076H211.846c-26.01%2C0-47.077-21.09-47.077-47.076V235.385h423.692V659.077z%20%09%20M612%2C188.308H141.23c-12.993%2C0-23.538-10.545-23.538-23.539s10.545-23.539%2C23.538-23.539H612%20%09c12.993%2C0%2C23.538%2C10.545%2C23.538%2C23.539S624.993%2C188.308%2C612%2C188.308z%20M258.923%2C659.077c12.993%2C0%2C23.539-10.546%2C23.539-23.539%20%09V353.077c0-12.993-10.545-23.539-23.539-23.539s-23.539%2C10.545-23.539%2C23.539v282.461%20%09C235.384%2C648.531%2C245.93%2C659.077%2C258.923%2C659.077z%20M376.615%2C659.077c12.993%2C0%2C23.538-10.546%2C23.538-23.539V353.077%20%09c0-12.993-10.545-23.539-23.538-23.539s-23.539%2C10.545-23.539%2C23.539v282.461C353.077%2C648.531%2C363.622%2C659.077%2C376.615%2C659.077z%22%20%2F%3E%3C%2Fsvg%3E%0A"));
+}
+
+/*--Validation----------------------------------------------------------------*/
+body .validation-error {
+    color: var(--validation-error-color, #ff4900);
+    font-size: var(--validation-error-font-size, 12px);
+    font-weight: var(--validation-error-font-weight, 400);
+}
+
+body .has-validation-error .error-border,
+body .has-validation-error .error-border:active,
+body .has-validation-error .error-border:focus {
+    border-bottom-color: var(--validation-error-color, #ff4900);
+}
+
+body .upload-file-container .single-file-upload-container.file-validation-error .single-file-upload-filename,
+body .upload-file-container .single-file-upload-container.file-validation-error {
+    color: var(--validation-error-color, #ff4900);
+}
+
+body .upload-file-container .progress-bar.progress-bar-danger {
+    background-color: var(--validation-error-color, #ff4900);
+}
+
+/*--ModalDialogs & Popups----------------------------------------------------------------*/
+body .modal-content {
+    background-color: var(--modal-dialog-background-color, #fff);
+    border-color: var(--modal-dialog-border-color, #999);
+}
+
+body .dialog-message {
+    font-size: var(--modal-dialog-font-size, 14px);
+}
+
+body .modal-backdrop {
+    background-color: var(--modal-dialog-backdrop-color, rgba(0, 0, 0, 0.8));
+}
+
+/*--ProfileIcon----------------------------------------------------------------*/
+body .profile-icon {
+    background-image: var(--profile-icon, url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Aa%3D%22http%3A%2F%2Fns.adobe.com%2FAdobeSVGViewerExtensions%2F3.0%2F%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cdefs%3E%3C%2Fdefs%3E%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M15%2C5c0%2C2.759-2.236%2C5-5%2C5c-2.76%2C0-5-2.235-5-5s2.24-5%2C5-5S15%2C2.234%2C15%2C5z%20M15.354%2C9.962%20c-1.398%2C1.391-3.281%2C2.265-5.354%2C2.265c-2.074%2C0-3.955-0.891-5.354-2.274C2.178%2C11.054%2C0%2C12.812%2C0%2C14.577c0%2C3.531%2C20%2C3.531%2C20%2C0%20C20%2C12.812%2C17.822%2C11.064%2C15.354%2C9.962z%22%2F%3E%3C%2Fsvg%3E"));
+    border-color: var(--profile-icon-border-color, #2196f3)
+}
+
+/*--StadiumFooter----------------------------------------------------------------*/
+#footer {
+    display: var(--stadium-footer-display, block);
+}
+
+/*--AllControls----------------------------------------------------------------*/
+body .control-container {
+    margin-top: var(--control-container-top-margin, 10px);
+    padding-right: var(--control-container-right-padding, 16px);
+}
+
+/*FormControls*/
+body .form-control {
+    width: var(--form-control-width, 300px);
+    height: var(--form-control-height, 30px);
+    padding: var(--form-control-topbottom-padding, 8px) var(--form-control-leftright-padding, 12px);
+    font-size: var(--form-control-font-size, 14px);
+}
+
+body .upload-file-container form {
+    max-width: var(--form-control-width, 300px);
+}
