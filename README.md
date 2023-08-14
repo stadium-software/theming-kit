@@ -1,8 +1,12 @@
-# Stadium 6 Theming-Kit
+# Stadium Theming-Kit
 A set of CSS variables for making adjustments to the default theme of Stadium applications
 
 ## Description
-This kit consists of two separate, but related CSS files. One of them contains a set of variables and the other a number of CSS instructions. Uncommenting the variables and changing the related values in the *theming-variables.css* file causes the corresponding styles on the default theme to be overridden. 
+This kit consists of three separate, but related CSS files
+
+1. *theming-variables.css* contains a set of variables
+2. *theming.css* contains a number of CSS instructions
+3. *theming-fallbacks-default-theme.css* contains the fallback variables for the Material Design (Stadium default) theme
 
 ## How-to (simple)
 To customise the default theme

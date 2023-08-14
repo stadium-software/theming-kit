@@ -1,0 +1,264 @@
+/*Theming Kit Fallback values for the Stadium Default Theme (Material Blue)*/
+/*There should be no need to make any changes in this file.*/
+
+:root {
+
+    /*stadium-general*/
+    --stadium-footer-display-fallback: block;
+    --stadium-application-leftright-padding-fallback: 15px;
+
+    /*body*/
+    --body-background-color-fallback: #fff;
+
+    /*typography*/
+    --font-family-fallback: Open Sans, Verdana, sans-serif;
+    --font-color-fallback: #6f6f6f;
+    --font-size-fallback: 14px;
+    --font-size-smaller-fallback: 12px;
+    --font-size-larger-fallback: 16px;
+
+    /*controls*/
+    --control-container-top-margin-fallback: 10px;
+    --control-container-right-padding-fallback: 16px;
+
+    /*form controls*/
+    --form-control-width-fallback: 300px;
+    --form-control-height-fallback: 38px;
+    --form-control-topbottom-padding-fallback: 8px;
+    --form-control-leftright-padding-fallback: 12px;
+    --form-control-font-size-fallback: var(--form-control-font-size, var(--font-size, var(--font-size-fallback)));
+    --form-control-font-color-fallback: #919191;
+    --form-control-background-color-fallback: #f9f9f9;
+
+    --form-control-top-border-color-fallback: transparent;
+    --form-control-right-border-color-fallback: transparent;
+    --form-control-bottom-border-color-fallback: #1976d2;
+    --form-control-left-border-color-fallback: transparent;
+
+    --form-control-focus-bottom-border-color-fallback: transparent;
+    --form-control-focus-right-border-color-fallback: transparent;
+    --form-control-focus-bottom-border-color-fallback: #ffc60c;
+    --form-control-focus-left-border-color-fallback: transparent;
+
+    --form-control-bottom-border-transition-fallback: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    --form-control-selected-font-color-fallback: var(--form-control-selected-font-color, var(--body-background-color, var(--body-background-color-fallback)));
+    --form-control-selected-background-color-fallback: var(--form-control-selected-background-color, var(--button-border-color, var(--button-border-color-fallback)));
+
+    --form-control-disabled-font-color-fallback: #b8b8b8;
+    --form-control-disabled-background-color-fallback: #e6e6e6;
+
+    /*button*/
+    --button-background-color-fallback: #39f;
+    --button-border-color-fallback: #2196f3;
+    --button-font-color-fallback: #fff;
+    --button-font-size-fallback: var(--button-font-size, var(--font-size, var(--font-size-fallback)));
+    --button-shadow1-fallback: 0 3px 6px rgba(0, 0, 0, 0.16);
+    --button-shadow2-fallback: 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    --button-hover-background-color-fallback: #1976d2;
+    --button-hover-font-color-fallback: #fff;
+    --button-hover-shadow1-fallback: 0 10px 20px rgba(0, 0, 0, 0.19);
+    --button-hover-shadow2-fallback: 0 6px 6px rgba(0, 0, 0, 0.23);
+
+    /*checkbox*/
+    --checkbox-background-color-fallback: var(--checkbox-background-color, var(--body-background-color, var(--body-background-color-fallback)));
+    --checkbox-border-color-fallback: #ccc;
+    --checkbox-border-width-fallback: 2px;
+    --checkbox-checked-tick-color-fallback: var(--checkbox-checked-tick-color, var(--button-background-color, var(--button-background-color-fallback)));
+
+    /*checkboxlist*/
+    --checkboxlist-background-color-fallback: #f5f5f5;
+    --checkboxlist-checkbox-label-size-fallback: 15px; 
+    --checkboxlist-checkbox-label-color-fallback: var(--checkboxlist-checkbox-label-color, var(--font-color, var(--font-color-fallback)));
+
+    /*datagrid*/
+    --datagrid-searchbox-font-color-fallback: var(--datagrid-searchbox-font-color, var(--form-control-font-color, var(--form-control-font-color-fallback)));
+    --datagrid-searchbox-background-color-fallback: var(--datagrid-searchbox-background-color, var(--form-control-background-color, var(--form-control-background-color-fallback)));
+
+    --datagrid-searchbox-top-border-color-fallback: var(--datagrid-searchbox-top-border-color, var(--form-control-top-border-color, var(--form-control-top-border-color-fallback)));
+    --datagrid-searchbox-right-border-color-fallback: var(--datagrid-searchbox-right-border-color, var(--form-control-right-border-color, var(--form-control-right-border-color-fallback)));
+    --datagrid-searchbox-bottom-border-color-fallback: var(--datagrid-searchbox-bottom-border-color, var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback)));
+    --datagrid-searchbox-left-border-color-fallback: var(--datagrid-searchbox-left-border-color, var(--form-control-left-border-color, var(--form-control-left-border-color-fallback)));
+
+    --datagrid-searchbox-focus-top-border-color-fallback: var(--datagrid-searchbox-focus-top-border-color, var(--form-control-focus-top-border-color, var(--form-control-focus-top-border-color-fallback)));
+    --datagrid-searchbox-focus-right-border-color-fallback: var(--datagrid-searchbox-focus-right-border-color, var(--form-control-focus-right-border-color, var(--form-control-focus-right-border-color-fallback)));
+    --datagrid-searchbox-focus-bottom-border-color-fallback: var(--datagrid-searchbox-focus-bottom-border-color, var(--form-control-focus-bottom-border-color, var(--form-control-focus-bottom-border-color-fallback)));
+    --datagrid-searchbox-focus-left-border-color-fallback: var(--datagrid-searchbox-focus-left-border-color, var(--form-control-focus-left-border-color, var(--form-control-focus-left-border-color-fallback)));
+
+    --datagrid-searchbox-button-font-color-fallback: var(--datagrid-searchbox-button-font-color, var(--button-font-color, var(--button-font-color-fallback)));
+    --datagrid-searchbox-button-background-color-fallback: var(--datagrid-searchbox-button-background-color, var(--button-background-color, var(--button-background-color-fallback)));
+    --datagrid-searchbox-button-border-color-fallback: var(--datagrid-searchbox-button-border-color, var(--button-border-color, var(--button-border-color-fallback)));
+    --datagrid-searchbox-button-hover-background-color-fallback: var(--datagrid-searchbox-button-hover-background-color, var(--button-hover-background-color, var(--button-hover-background-color-fallback)));
+    --datagrid-searchbox-button-icon-fallback: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2720%27%20height%3D%2720%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M20%2018l-5.2-5.2c1-1.4%201.5-3%201.5-4.7C16.3%203.6%2012.6%200%208.1%200S0%203.6%200%208.1c0%204.5%203.6%208.1%208.1%208.1%201.8%200%203.5-0.6%204.9-1.6l5.2%205.2L20%2018zM1.9%208.1c0-3.4%202.8-6.3%206.3-6.3%203.4%200%206.3%202.8%206.3%206.3%200%201.7-0.6%203.2-1.8%204.4%20-1.2%201.2-2.8%201.8-4.4%201.8C4.7%2014.4%201.9%2011.6%201.9%208.1z%27%20fill%3D%27rgba(255, 255, 255, 1)%27%2F%3E%3C%2Fsvg%3E");
+    --datagrid-searchbox-help-icon-fallback: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%0A%09%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Aa%3D%22http%3A%2F%2Fns.adobe.com%2FAdobeSVGViewerExtensions%2F3.0%2F%22%0A%09%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-4.54%20-1.5%2024%2024%22%20enable-background%3D%22new%20-4.54%20-1.5%2024%2024%22%0A%09%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cdefs%3E%0A%3C%2Fdefs%3E%0A%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M9.146%2C15.639H5.531c-0.01-0.518-0.014-0.836-0.014-0.949c0-1.172%2C0.193-2.137%2C0.58-2.893%0A%09c0.389-0.756%2C1.162-1.607%2C2.326-2.553c1.162-0.945%2C1.857-1.564%2C2.084-1.855c0.35-0.465%2C0.525-0.975%2C0.525-1.533%0A%09c0-0.775-0.311-1.438-0.93-1.992C9.484%2C3.311%2C8.65%2C3.035%2C7.602%2C3.035c-1.012%2C0-1.857%2C0.287-2.539%2C0.865%0A%09C4.383%2C4.477%2C3.914%2C5.355%2C3.66%2C6.537L0%2C6.082c0.105-1.691%2C0.826-3.129%2C2.164-4.309C3.5%2C0.592%2C5.256%2C0%2C7.432%2C0%0A%09c2.287%2C0%2C4.105%2C0.598%2C5.459%2C1.793c1.352%2C1.195%2C2.027%2C2.588%2C2.027%2C4.176c0%2C0.879-0.248%2C1.711-0.746%2C2.496%0A%09c-0.494%2C0.785-1.557%2C1.854-3.182%2C3.205c-0.842%2C0.699-1.363%2C1.262-1.566%2C1.688C9.221%2C13.781%2C9.127%2C14.545%2C9.146%2C15.639z%20M5.531%2C21%0A%09v-3.986h3.984V21H5.531z%22%2F%3E%0A%3C%2Fsvg%3E");
+    --datagrid-searchbox-export-icon-fallback: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%0A%09%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Aa%3D%22http%3A%2F%2Fns.adobe.com%2FAdobeSVGViewerExtensions%2F3.0%2F%22%0A%09%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-3.734%20-1%2024%2024%22%20enable-background%3D%22new%20-3.734%20-1%2024%2024%22%0A%09%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cdefs%3E%0A%3C%2Fdefs%3E%0A%3Cpolygon%20fill%3D%22rgba(33, 150, 243, 1)%22%20points%3D%220%2C2.639%200%2C20.07%208.52%2C21.432%208.52%2C19.633%201.773%2C18.559%201.773%2C4.152%2014.758%2C2.078%2014.758%2C14.973%20%0A%0916.531%2C14.973%2016.531%2C0%20%22%2F%3E%0A%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M4.645%2C13.4l1.018-2.406c0.072-0.24%2C0.117-0.443%2C0.135-0.443h0.018c0.041%2C0.406%2C0.08%2C0.328%2C0.119%2C0.422%0A%09L6.947%2C13.4H8.52L6.705%2C9.5l1.764-3.836H6.992L6.057%2C8.107C5.965%2C8.406%2C5.904%2C8.514%2C5.871%2C8.92H5.854%0A%09C5.803%2C8.514%2C5.744%2C8.311%2C5.678%2C8.129L4.836%2C5.664H3.225l1.717%2C3.869L3.064%2C13.4H4.645z%22%2F%3E%0A%3Cpolygon%20fill%3D%22rgba(33, 150, 243, 1)%22%20points%3D%2213.201%2C17.465%2013.201%2C9.533%2010.934%2C9.533%2010.934%2C17.465%208.668%2C17.465%2012.068%2C22%2015.467%2C17.465%20%22%2F%3E%0A%3C%2Fsvg%3E");
+
+    --datagrid-table-border-color-fallback: var(--datagrid-table-border-color, var(--checkbox-border-color, var(--checkbox-border-color-fallback)));
+    --datagrid-table-heading-row-background-color-fallback: var(--datagrid-table-heading-row-background-color, var(--body-background-color, var(--body-background-color-fallback)));
+    --datagrid-table-heading-font-color-fallback: var(--datagrid-table-heading-font-color, var(--button-hover-background-color, var(--button-hover-background-color-fallback)));
+    --datagrid-table-heading-font-hover-color-fallback: var(--datagrid-table-heading-font-hover-color, var(--form-control-font-color, var(--form-control-font-color-fallback)));
+    --datagrid-table-heading-case-fallback: uppercase;
+    --datagrid-table-even-rows-background-color-fallback:var(--datagrid-table-even-rows-background-color, var(--body-background-color, var(--body-background-color-fallback)));
+    --datagrid-table-odd-rows-background-color-fallback: var(--datagrid-table-odd-rows-background-color, var(--form-control-background-color, var(--form-control-background-color-fallback)));
+
+    --datagrid-table-pagination-font-size-fallback: var(--datagrid-table-pagination-font-size, var(--font-size, var(--font-size-fallback)));
+    --datagrid-table-pagination-font-color-fallback: var(--datagrid-table-pagination-font-color, var(--form-control-font-color, var(--form-control-font-color-fallback)));
+    --datagrid-table-pagination-background-color-fallback: var(--datagrid-table-pagination-background-color, var(--body-background-color, var(--body-background-color-fallback)));
+    --datagrid-table-pagination-border-color-fallback: var(--datagrid-table-pagination-border-color, var(--checkbox-border-color, var(--checkbox-border-color-fallback)));
+    --datagrid-table-pagination-hover-background-color-fallback: var(--datagrid-table-pagination-hover-background-color, var(--button-border-color, var(--button-border-color-fallback)));
+    --datagrid-table-pagination-hover-border-color-fallback: var(--datagrid-table-pagination-hover-border-color, var(--button-border-color, var(--button-border-color-fallback)));
+    --datagrid-table-pagination-hover-font-color-fallback: var(--datagrid-table-pagination-hover-font-color, var(--body-background-color, var(--body-background-color-fallback)));
+    --datagrid-table-pagination-current-page-background-color-fallback: var(--datagrid-table-pagination-current-page-background-color, var(--button-hover-background-color, var(--button-hover-background-color-fallback)));
+    --datagrid-table-pagination-current-page-font-color-fallback: var(--datagrid-table-pagination-current-page-font-color, var(--body-background-color, var(--body-background-color-fallback)));
+
+    --datagrid-table-selection-status-bar-background-color-fallback: var(--datagrid-table-selection-status-bar-background-color, var(--button-hover-background-color-fallback));
+    --datagrid-table-selection-status-bar-font-color-fallback: var(--datagrid-table-selection-status-bar-font-color, var(--body-background-color-fallback));
+    --datagrid-table-selection-status-bar-font-size-fallback: var(--datagrid-table-selection-status-bar-font-size, var(--font-size-fallback));
+
+    /*datepicker*/
+    --datepicker-textbox-font-color-fallback: var(--datepicker-textbox-font-color, var(--form-control-font-color, var(--form-control-font-color-fallback)));
+    --datepicker-textbox-background-color-fallback: var(--datepicker-textbox-background-color, var(--form-control-background-color, var(--form-control-background-color-fallback)));
+
+    --datepicker-textbox-top-border-color-fallback: var(--datepicker-textbox-top-border-color, var(--form-control-top-border-color, var(--form-control-top-border-color-fallback)));
+    --datepicker-textbox-right-border-color-fallback: var(--datepicker-textbox-right-border-color, var(--form-control-right-border-color, var(--form-control-right-border-color-fallback)));
+    --datepicker-textbox-bottom-border-color-fallback: var(--datepicker-textbox-bottom-border-color, var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback)));
+    --datepicker-textbox-left-border-color-fallback: var(--datepicker-textbox-left-border-color, var(--form-control-left-border-color, var(--form-control-left-border-color-fallback)));
+
+    --datepicker-textbox-focus-top-border-color-fallback: var(--datepicker-textbox-focus-top-border-color, var(--form-control-focus-top-border-color, var(--form-control-focus-top-border-color-fallback)));
+    --datepicker-textbox-focus-right-border-color-fallback: var(--datepicker-textbox-focus-right-border-color, var(--form-control-focus-right-border-color, var(--form-control-focus-right-border-color-fallback)));
+    --datepicker-textbox-focus-bottom-border-color-fallback: var(--datepicker-textbox-focus-bottom-border-color, var(--form-control-focus-bottom-border-color, var(--form-control-focus-bottom-border-color-fallback)));
+    --datepicker-textbox-focus-left-border-color-fallback: var(--datepicker-textbox-focus-left-border-color, var(--form-control-focus-left-border-color, var(--form-control-focus-left-border-color-fallback)));
+
+    --datepicker-textbox-disabled-font-color-fallback: var(--datepicker-textbox-disabled-font-color, var(--form-control-font-color, var(--form-control-font-color-fallback)));
+
+    --datepicker-textbox-button-background-color-fallback: var(--datepicker-textbox-button-background-color, var(--button-background-color, var(--button-background-color-fallback)));
+    --datepicker-textbox-button-border-color-fallback: var(--datepicker-textbox-button-border-color, var(--button-border-color, var(--button-border-color-fallback)));
+    --datepicker-textbox-button-hover-background-color-fallback: var(--datepicker-textbox-button-hover-background-color, var(--button-hover-background-color, var(--button-hover-background-color-fallback)));
+    --datepicker-textbox-button-icon-fallback: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2720%27%20height%3D%2720%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cstyle%3E.a%7Bfill%3Argba(255, 255, 255, 1)%3B%7D%3C%2Fstyle%3E%3Crect%20x%3D%2713.3%27%20width%3D%271.5%27%20height%3D%272.6%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%274.6%27%20width%3D%271.5%27%20height%3D%272.6%27%20class%3D%27a%27%2F%3E%3Cpath%20d%3D%27M15.4%202.1v1.5H12.8V2.1H6.7v1.5H4.1V2.1H0V17.5h20V2.1H15.4zM1%2016.4V5.6h17.9v10.8H1z%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%272.1%27%20y%3D%277.2%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%276.2%27%20y%3D%277.2%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%2710.3%27%20y%3D%277.2%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%272.1%27%20y%3D%2710.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%276.2%27%20y%3D%2710.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%2710.3%27%20y%3D%2710.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%272.1%27%20y%3D%2713.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%276.2%27%20y%3D%2713.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%2710.3%27%20y%3D%2713.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%2714.4%27%20y%3D%277.2%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%2714.4%27%20y%3D%2710.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3Crect%20x%3D%2714.4%27%20y%3D%2713.3%27%20width%3D%272.6%27%20height%3D%271.5%27%20class%3D%27a%27%2F%3E%3C%2Fsvg%3E");
+    
+    --datepicker-selectpopup-selecteddate-font-color-fallback: var(--datepicker-selectpopup-selecteddate-font-color, var(--button-font-color, var(--button-font-color-fallback)));
+    --datepicker-selectpopup-selecteddate-background-color-fallback: var(--datepicker-selectpopup-selecteddate-background-color, var(--button-background-color, var(--button-background-color-fallback)));
+    --datepicker-selectpopup-today-font-color-fallback: var(--datepicker-selectpopup-today-font-color, var(--button-background-color, var(--button-background-color-fallback)));
+
+    --datepicker-selectpopup-day-hover-font-color-fallback: var(--datepicker-selectpopup-day-hover-font-color, var(--datepicker-selectpopup-day-hover-font-color, var(--form-control-font-color-fallback)));
+    --datepicker-selectpopup-day-hover-background-color-fallback: #eee;
+
+    /*dropdown*/
+    --dropdown-background-color-fallback: var(--dropdown-background-color, var(--form-control-background-color, var(--form-control-background-color-fallback)));
+    --dropdown-bottom-border-color-fallback: var(--dropdown-bottom-border-color, var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback)));
+
+    /*label*/
+    --label-color-fallback: var(--label-color, var(--font-color, var(--font-color-fallback)));
+
+    /*link*/
+    --link-color-fallback: #1976d2;
+
+    /*menu*/
+    --menu-background-color-fallback: var(--menu-background-color, var(--button-border-color, var(--button-border-color-fallback)));
+    --menu-border-color-fallback: var(--menu-border-color, var(--button-border-color, var(--button-border-color-fallback)));
+    --menu-font-color-fallback: var(--menu-font-color, var(--body-background-color, var(--body-background-color-fallback)));
+
+    --menu-item-hover-font-color-fallback: var(--menu-item-hover-font-color, var(--body-background-color, var(--body-background-color-fallback)));
+    --menu-item-hover-background-color-fallback: var(--menu-item-hover-background-color, var(--button-hover-background-color, var(--button-hover-background-color-fallback)));
+    --menu-item-top-padding-fallback: 15px;
+    --menu-item-right-padding-fallback: 15px;
+    --menu-item-bottom-padding-fallback: 15px;
+    --menu-item-left-padding-fallback: 15px;
+
+    --menu-subitem-top-padding-fallback: 3px;
+    --menu-subitem-right-padding-fallback: 20px;
+    --menu-subitem-bottom-padding-fallback: 3px;
+    --menu-subitem-left-padding-fallback: 20px;
+
+    --menu-mobile-item-background-color-fallback: var(--menu-mobile-item-background-color, var(--button-hover-background-color, var(--button-hover-background-color-fallback)));
+    --menu-mobile-item-hover-background-color-fallback: var(--menu-mobile-item-hover-background-color, var(--button-hover-background-color, var(--button-hover-background-color-fallback)));
+
+    /*panel*/
+    --panel-border-color-fallback: var(--panel-border-color, var(--checkbox-border-color, var(--checkbox-border-color-fallback)));
+
+    --panel-heading-font-size-fallback: large;
+    --panel-heading-font-color-fallback: var(--panel-heading-font-color, var(--font-color, var(--font-color-fallback)));
+    --panel-heading-topbottom-padding-fallback: 10px;
+    --panel-heading-leftright-padding-fallback: 15px;
+
+    --panel-body-padding-top-fallback: 5px;
+    --panel-body-padding-right-fallback: 5px;
+    --panel-body-padding-bottom-fallback: 15px;
+    --panel-body-padding-left-fallback: 15px;
+
+    /*radiobuttonlist*/
+    --radio-button-list-background-color-fallback: var(--radio-button-list-background-color, var(--checkboxlist-background-color, var(--checkboxlist-background-color-fallback)));
+    --radio-button-list-item-border-color-fallback: var(--radio-button-list-item-border-color, var(--button-background-color, var(--button-background-color-fallback)));
+    --radio-button-list-background-fallback: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2022%2022%22%20version%3D%221.1%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2211%22%20r%3D%2210%22%20style%3D%22fill%3Argb(255,255,255)%3Bstroke-width%3A1%3Bstroke%3Argb(51, 153, 255)%3B%22%20%2F%3E%3C%2Fsvg%3E");
+    --radio-button-list-selected-background-fallback: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2022%2022%22%20version%3D%221.1%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2211%22%20r%3D%2210%22%20style%3D%22fill%3Argb(255,255,255)%3Bstroke-width%3A1%3Bstroke%3Argb(51, 153, 255)%3B%22%20%2F%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2211%22%20r%3D%226%22%20style%3D%22fill%3Argb(51, 153, 255)%3Bstroke-width%3A1%3Bstroke%3Argb(51, 153, 255)%3B%22%20%2F%3E%3C%2Fsvg%3E");
+
+    /*textbox*/
+    --textbox-font-color-fallback: var(--textbox-font-color, var(--form-control-font-color, var(--form-control-font-color-fallback)));
+    --textbox-background-color-fallback: var(--textbox-background-color, var(--form-control-background-color, var(--form-control-background-color-fallback)));
+    --textbox-bottom-border-color-fallback: var(--textbox-bottom-border-color, var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback)));
+    --textbox-focus-bottom-border-color-fallback: var(--textbox-focus-bottom-border-color, var(--form-control-focus-bottom-border-color, var(--form-control-focus-bottom-border-color-fallback)));
+    --textbox-password-icon-fallback: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M8%203.9c-6.7%200-8%205.1-8%205.1s2.2%204.1%207.9%204.1%208.1-4%208.1-4-1.3-5.2-8-5.2zM5.3%205.4c0.5-0.3%201.3-0.3%201.3-0.3s-0.5%200.9-0.5%201.6c0%200.7%200.2%201.1%200.2%201.1l-1.1%200.2c0%200-0.3-0.5-0.3-1.2%200-0.8%200.4-1.4%200.4-1.4zM7.9%2012.1c-4.1%200-6.2-2.3-6.8-3.2%200.3-0.7%201.1-2.2%203.1-3.2-0.1%200.4-0.2%200.8-0.2%201.3%200%202.2%201.8%204%204%204s4-1.8%204-4c0-0.5-0.1-0.9-0.2-1.3%202%200.9%202.8%202.5%203.1%203.2-0.7%200.9-2.8%203.2-7%203.2z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    --textbox-hide-password-icon-fallback: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M12.9%205.2l-0.8%200.8c1.7%200.9%202.5%202.3%202.8%203-0.7%200.9-2.8%203.1-7%203.1-0.7%200-1.2-0.1-1.8-0.2l-0.8%200.8c0.8%200.3%201.7%200.4%202.6%200.4%205.7%200%208.1-4%208.1-4s-0.6-2.4-3.1-3.9z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M12%207.1c0-0.3%200-0.6-0.1-0.8l-4.8%204.7c0.3%200%200.6%200.1%200.9%200.1%202.2%200%204-1.8%204-4z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M15.3%200l-4.4%204.4c-0.8-0.2-1.8-0.4-2.9-0.4-6.7%200-8%205.1-8%205.1s1%201.8%203.3%203l-3.3%203.2v0.7h0.7l15.3-15.3v-0.7h-0.7zM4%2011.3c-1.6-0.7-2.5-1.8-2.9-2.3%200.3-0.7%201.1-2.2%203.1-3.2-0.1%200.4-0.2%200.8-0.2%201.3%200%201.1%200.5%202.2%201.3%202.9l-1.3%201.3zM6.2%207.9l-1%200.2c0%200-0.3-0.5-0.3-1.2%200-0.8%200.4-1.5%200.4-1.5%200.5-0.3%201.3-0.3%201.3-0.3s-0.5%200.9-0.5%201.7c-0.1%200.7%200.1%201.1%200.1%201.1z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A");
+    --textbox-password-icon-right-position-fallback: 8px;
+    --textbox-password-icon-top-position-fallback: 12px;
+    --textbox-password-right-padding-fallback: 24px;
+
+    /*uploadfile*/
+    --upload-file-upload-status-error-icon-fallback:  url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2032.526%2032.526%22%20style%3D%22enable-background%3Anew%200%200%2032.526%2032.526%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%2220px%22%20height%3D%2220px%22%3E%3Cpolygon%20points%3D%2232.526%2C2.828%2029.698%2C0%2016.263%2C13.435%202.828%2C0%200%2C2.828%2013.435%2C16.263%200%2C29.698%202.828%2C32.526%2016.263%2C19.091%20%20%2029.698%2C32.526%2032.526%2C29.698%2019.091%2C16.263%20%22%20fill%3D%22rgba(255, 73, 0, 1)%22%2F%3E%3C%2Fsvg%3E");
+
+    --upload-file-box-font-color-fallback: var(--upload-file-box-font-color, var(--button-hover-background-color, var(--button-hover-background-color-fallback)));
+    --upload-file-box-border-color-fallback: var(--upload-file-box-border-color, var(--button-hover-background-color, var(--button-hover-background-color-fallback)));
+    --upload-file-box-border-style-fallback: dashed;
+    --upload-file-box-border-width-fallback: 1px;
+
+    --upload-file-upload-status-error-icon-fallback: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2032.526%2032.526%22%20style%3D%22enable-background%3Anew%200%200%2032.526%2032.526%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%2220px%22%20height%3D%2220px%22%3E%3Cpolygon%20points%3D%2232.526%2C2.828%2029.698%2C0%2016.263%2C13.435%202.828%2C0%200%2C2.828%2013.435%2C16.263%200%2C29.698%202.828%2C32.526%2016.263%2C19.091%20%20%2029.698%2C32.526%2032.526%2C29.698%2019.091%2C16.263%20%22%20fill%3D%22rgba(255, 73, 0, 1)%22%2F%3E%3C%2Fsvg%3E");
+    --upload-file-upload-status-color-fallback: var(--upload-file-upload-status-color, var(--button-hover-background-color, var(--button-hover-background-color-fallback)));
+    --upload-file-upload-status-font-size-fallback: var(--upload-file-upload-status-font-size, var(--font-size-smaller, var(--font-size-smaller-fallback)));
+    --upload-file-upload-status-success-icon-fallback: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%20448.8%20448.8%22%3E%3Cpolygon%20points%3D%22142.8%2C323.85%2035.7%2C216.75%200%2C252.45%20142.8%2C395.25%20448.8%2C89.25%20413.1%2C53.55%20%20%20%22%20fill%3D%22rgba(51,153,255,1)%22%2F%3E%3C%2Fsvg%3E");
+    --upload-file-upload-status-success-delete-icon-fallback: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22753.23px%22%20height%3D%22753.23px%22%20viewBox%3D%220%200%20753.23%20753.23%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22rgba(51,153,255,1)%22%20d%3D%22M494.308%2C659.077c12.993%2C0%2C23.538-10.546%2C23.538-23.539V353.077c0-12.993-10.545-23.539-23.538-23.539%20%09s-23.538%2C10.545-23.538%2C23.539v282.461C470.77%2C648.531%2C481.314%2C659.077%2C494.308%2C659.077z%20M635.538%2C94.154h-141.23V47.077%20%09C494.308%2C21.067%2C473.24%2C0%2C447.23%2C0H306c-26.01%2C0-47.077%2C21.067-47.077%2C47.077v47.077h-141.23%20%09c-26.01%2C0-47.077%2C21.067-47.077%2C47.077v47.077c0%2C25.986%2C21.067%2C47.077%2C47.077%2C47.077v423.692%20%09c0%2C51.996%2C42.157%2C94.153%2C94.154%2C94.153h329.539c51.996%2C0%2C94.153-42.157%2C94.153-94.153V235.385%20%09c26.01%2C0%2C47.077-21.091%2C47.077-47.077V141.23C682.615%2C115.221%2C661.548%2C94.154%2C635.538%2C94.154z%20M306%2C70.615%20%09c0-12.993%2C10.545-23.539%2C23.538-23.539h94.154c12.993%2C0%2C23.538%2C10.545%2C23.538%2C23.539v23.539c-22.809%2C0-141.23%2C0-141.23%2C0V70.615z%20%09%20M588.461%2C659.077c0%2C25.986-21.066%2C47.076-47.076%2C47.076H211.846c-26.01%2C0-47.077-21.09-47.077-47.076V235.385h423.692V659.077z%20%09%20M612%2C188.308H141.23c-12.993%2C0-23.538-10.545-23.538-23.539s10.545-23.539%2C23.538-23.539H612%20%09c12.993%2C0%2C23.538%2C10.545%2C23.538%2C23.539S624.993%2C188.308%2C612%2C188.308z%20M258.923%2C659.077c12.993%2C0%2C23.539-10.546%2C23.539-23.539%20%09V353.077c0-12.993-10.545-23.539-23.539-23.539s-23.539%2C10.545-23.539%2C23.539v282.461%20%09C235.384%2C648.531%2C245.93%2C659.077%2C258.923%2C659.077z%20M376.615%2C659.077c12.993%2C0%2C23.538-10.546%2C23.538-23.539V353.077%20%09c0-12.993-10.545-23.539-23.538-23.539s-23.539%2C10.545-23.539%2C23.539v282.461C353.077%2C648.531%2C363.622%2C659.077%2C376.615%2C659.077z%22%20%2F%3E%3C%2Fsvg%3E%0A");
+
+    /*validation*/
+    --validation-error-color-fallback: #ff4900;
+    --validation-error-font-size-fallback: var(--validation-error-font-size, var(--font-size-smaller, var(--font-size-smaller-fallback)));
+    --validation-error-font-weight-fallback: 400;
+
+    /*modal dialogs and popups*/
+    --modal-dialog-background-color-fallback: var(--modal-dialog-background-color, var(--body-background-color, var(--body-background-color-fallback)));
+    --modal-dialog-border-color-fallback: var(--modal-dialog-border-color, var(--form-control-font-color, var(--form-control-font-color-fallback)));
+    --modal-dialog-font-size-fallback: var(--modal-dialog-font-size, var(--font-size, var(--font-size-fallback)));
+    --modal-dialog-backdrop-color-fallback: (0, 0, 0, 0.8);
+
+    /*profile-icon*/
+    --profile-icon-fallback: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Aa%3D%22http%3A%2F%2Fns.adobe.com%2FAdobeSVGViewerExtensions%2F3.0%2F%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cdefs%3E%3C%2Fdefs%3E%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M15%2C5c0%2C2.759-2.236%2C5-5%2C5c-2.76%2C0-5-2.235-5-5s2.24-5%2C5-5S15%2C2.234%2C15%2C5z%20M15.354%2C9.962%20c-1.398%2C1.391-3.281%2C2.265-5.354%2C2.265c-2.074%2C0-3.955-0.891-5.354-2.274C2.178%2C11.054%2C0%2C12.812%2C0%2C14.577c0%2C3.531%2C20%2C3.531%2C20%2C0%20C20%2C12.812%2C17.822%2C11.064%2C15.354%2C9.962z%22%2F%3E%3C%2Fsvg%3E");
+    --profile-icon-border-color-fallback: var(--profile-icon-border-color, var(--button-border-color, var(--button-border-color-fallback)));
+
+    /*busy-indicator*/
+    --busy-indicator-height-fallback: 2px;
+    --busy-indicator-px-from-bottom-fallback: 30px;
+    --busy-indicator-px-from-top-fallback: auto;
+    --busy-indicator-default-background-color-fallback: var(--busy-indicator-default-background-color, var(--body-background-color, var(--body-background-color-fallback)));
+    --busy-indicator-active-background-color-fallback: var(--busy-indicator-active-background-color, var(--button-hover-background-color, var(--button-hover-background-color-fallback)));
+    --busy-indicator-width-fallback: 500px;
+
+    /*notifications*/
+    --notification-font-size-fallback: 14px;
+    --notification-font-color-fallback: #333;
+
+    --notification-sidebar-width-fallback: 6px;
+
+    --notification-success-sidebar-color-fallback: #88a538;
+    --notification-success-background-color-fallback: #f2f2f2;
+    --notification-success-icon-fallback: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20viewBox%3D%220%200%2044%2044%22%20enable-background%3D%22new%200%200%2044%2044%22%20width%3D%22512px%22%20height%3D%22512px%22%3E%3Cpath%20d%3D%22m22%2C0c-12.2%2C0-22%2C9.8-22%2C22s9.8%2C22%2022%2C22%2022-9.8%2022-22-9.8-22-22-22zm12.7%2C15.1l0%2C0-16%2C16.6c-0.2%2C0.2-0.4%2C0.3-0.7%2C0.3-0.3%2C0-0.6-0.1-0.7-0.3l-7.8-8.4-.2-.2c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5%200.3-0.7l1.4-1.4c0.4-0.4%201-0.4%201.4%2C0l.1%2C.1%205.5%2C5.9c0.2%2C0.2%200.5%2C0.2%200.7%2C0l13.4-13.9h0.1c0.4-0.4%201-0.4%201.4%2C0l1.4%2C1.4c0.4%2C0.3%200.4%2C0.9%200%2C1.3z%22%20fill%3D%22rgba(136, 165, 56, 1)%22%2F%3E%3C%2Fsvg%3E");
+    
+    --notification-info-sidebar-color-fallback: #186eb5;
+    --notification-info-background-color-fallback: #f2f2f2;
+    --notification-info-icon-fallback: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22512px%22%20height%3D%22512px%22%20viewBox%3D%220%200%20442.761%20442.762%22%20style%3D%22enable-background%3Anew%200%200%20442.761%20442.762%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20d%3D%22M237.081%2C31.617c-113.594%2C0-205.679%2C84.96-205.679%2C189.764c0%2C28.473%2C6.809%2C55.473%2C18.986%2C79.711L1.735%2C389.064%20%20%20c-2.704%2C4.887-2.215%2C10.916%2C1.239%2C15.307c2.672%2C3.396%2C6.722%2C5.299%2C10.911%2C5.299c1.223%2C0%2C2.457-0.162%2C3.674-0.496l106.505-29.234%20%20%20c32.434%2C19.719%2C71.269%2C31.205%2C113.016%2C31.205c113.595%2C0%2C205.681-84.959%2C205.681-189.764%20%20%20C442.761%2C116.577%2C350.674%2C31.617%2C237.081%2C31.617z%20M236.801%2C126.781c11.227%2C0%2C20.357%2C9.132%2C20.357%2C20.357%20%20%20c0%2C11.226-9.132%2C20.358-20.357%2C20.358c-11.225%2C0-20.357-9.132-20.357-20.358C216.443%2C135.914%2C225.576%2C126.781%2C236.801%2C126.781z%20%20%20%20M257.573%2C297.481c0%2C10.2-8.299%2C18.5-18.5%2C18.5s-18.5-8.3-18.5-18.5v-87.467h-19.385c-8.836%2C0-16-7.164-16-16s7.164-16%2C16-16%20%20%20h37.229c0.219-0.008%2C0.434-0.033%2C0.655-0.033c10.201%2C0%2C18.5%2C8.299%2C18.5%2C18.5L257.573%2C297.481L257.573%2C297.481z%22%20fill%3D%22rgba(24, 110, 181, 1)%22%2F%3E%3C%2Fsvg%3E");
+    
+    --notification-warning-sidebar-color-fallback: #ff9c0c;
+    --notification-warning-background-color-fallback: #f2f2f2;
+    --notification-warning-icon-fallback: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20246.027%20246.027%22%20style%3D%22enable-background%3Anew%200%200%20246.027%20246.027%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22512px%22%20height%3D%22512px%22%3E%3Cpath%20d%3D%22M242.751%2C196.508L143.937%2C25.358c-4.367-7.564-12.189-12.081-20.924-12.081c-8.735%2C0-16.557%2C4.516-20.924%2C12.081%20%20L3.276%2C196.508c-4.368%2C7.564-4.368%2C16.596%2C0%2C24.161s12.189%2C12.081%2C20.924%2C12.081h197.629c8.734%2C0%2C16.556-4.516%2C20.923-12.08%20%20C247.119%2C213.105%2C247.118%2C204.073%2C242.751%2C196.508z%20M123.014%2C204.906c-8.672%2C0-15.727-7.055-15.727-15.727%20%20c0-8.671%2C7.055-15.726%2C15.727-15.726s15.727%2C7.055%2C15.727%2C15.726C138.74%2C197.852%2C131.685%2C204.906%2C123.014%2C204.906z%20M138.847%2C137.68%20%20c0%2C8.73-7.103%2C15.833-15.833%2C15.833s-15.833-7.103-15.833-15.833V65.013c0-4.142%2C3.358-7.5%2C7.5-7.5h16.667%20%20c4.143%2C0%2C7.5%2C3.358%2C7.5%2C7.5V137.68z%22%20fill%3D%22rgba(255, 156, 12, 1)%22%2F%3E%3C%2Fsvg%3E");
+    
+    --notification-error-sidebar-color-fallback: #bf211e;
+    --notification-error-background-color-fallback: #f2f2f2;
+    --notification-error-icon-fallback: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20470.311%20470.311%22%20style%3D%22enable-background%3Anew%200%200%20470.311%20470.311%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22512px%22%20height%3D%22512px%22%3E%3Cpath%20d%3D%22M449.864%2C113.768c-1.991-3.495-5.324-5.422-9.38-5.422c-17.615%2C0-58.241-26.524-97.543-52.161%20%20%20%20%20C298.672%2C27.304%2C256.851%2C0%2C234.156%2C0c-23.955%2C0-72.905%2C31.173-120.335%2C61.371c-36.245%2C23.101-73.742%2C46.975-85.992%2C46.975%20%20%20%20%20c-3.422%2C0-6.324%2C1.756-7.95%2C4.828c-1.065%2C2-1.585%2C4.544-1.585%2C7.73c0%2C45.349%2C143.469%2C349.407%2C215.862%2C349.407%20%20%20%20%20c68.345%2C0%2C217.862-290.905%2C217.862-346.537C452.018%2C119.563%2C451.327%2C116.296%2C449.864%2C113.768z%20M263.224%2C97.99l-5.682%2C195.313%20%20%20%20%20H212.77l-0.024-0.967L207.088%2C97.99C207.088%2C97.99%2C263.224%2C97.99%2C263.224%2C97.99z%20M235.156%2C382.035%20%20%20%20%20c-18.119%2C0-31.766-14.095-31.766-32.839c0-18.777%2C13.648-32.872%2C31.766-32.872c18.72%2C0%2C31.775%2C13.493%2C31.775%2C32.872%20%20%20%20%20C266.922%2C368.241%2C253.567%2C382.035%2C235.156%2C382.035z%22%20fill%3D%22rgba(191, 33, 30, 1)%22%2F%3E%3C%2Fsvg%3E");
+}
