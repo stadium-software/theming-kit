@@ -1,42 +1,74 @@
 # Stadium Theming-Kit
-A set of CSS variables for making adjustments to the default theme of Stadium applications
+A set of CSS variables for making adjustments to the look and feel of Stadium applications
 
 ## Description
-This kit consists of three separate, but related CSS files
+This kit allows for making extensive adjustments to the look and feel of Stadium applications without the need to write any CSS. 
 
-1. *theming-variables.css* contains a set of variables
-2. *theming.css* contains a number of CSS instructions
-3. *theming-fallbacks-default-theme.css* contains the fallback variables for the Material Design (Stadium default) theme
+## Contents
+The kit consists of a number of separate, but related CSS files. 
+1. *theming-variables.css* contains a set of variables (the only file you need to make changes to)
+2. *theming.css* contains CSS instructions to apply the variables
+3. *theming-fallbacks-default-theme.css* contains the fallback variables for the Stadium default theme (Material Design Blue)
+4. *theming-fallbacks-grey-theme.css* contains the fallback variables for the Grey theme
 
-## How-to (simple)
-To customise the default theme
-
+## Customisations
+To customise a theme using this kit
 1. Uncomment attributes to be customised in the *theming-variables.css* file
 2. Amend the related values as you see fit
-3. Copy and paste the contents of both files into the StyleSheet editor of your application
-4. Preview the application to see the applied styles
 
-## How-to (advanced)
-If you have a webserver installed on your machine, you can use this more efficient development setup 
+## Implementation
 
-1. Place the CSS files into a folder under the webserver 
-2. Add a link to each stylesheet into the "Head" property of your application, pointing to the stylesheets as below
+### Stadium 6 (versions 6.6 and above)
+1. Add three CSS files to the Embedded Files of your application
+   1. Your customised *theming-variables.css* file
+   2. The *theming.css* as is
+   3. The fallback values file
+      1. The *theming-fallbacks-default-theme.css* file if your Stadium Theme is *Default*, *PinkBlue*, *Purple* or *Teal*
+      2. The *theming-fallbacks-grey-theme.css* file if your theme is *Cobalt*, *Dark*, *DarkRed*, *Forest*, *Grey*, *Orange* or *Scarlet*
+2. Paste the link tags below into the *Head* property of your application
 ```
-<link rel="stylesheet" href="http://localhost:8888/theming-kit/theming.css">
-<link rel="stylesheet" href="http://localhost:8888/theming-kit/theming-variables.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/theming.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/theming-variables.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/theming-fallbacks-default-theme.css"> OR <link rel="stylesheet" href="{EmbeddedFiles}/theming-fallbacks-grey-theme.css">
+``` 
+3. Preview your applications to see the effect of changes you made
+
+### Application Properties
+The *Head* and *Theme* properties can be found by 
+1. Clicking on the root node in the Application Explorer
+2. Reviewing the Application properties in the properties panel
+
+### Stadium 5
+1. Add a Javascript action into the Page.load event handler
+2. Paste the Javascript below into the Javascript action Code Editor popup
 ```
-3. Preview your Stadium application
-4. Open the theming-variables.css file in your favourite editor (I recommend VSCode)
-5. Edit the CSS variables as you see fit
-6. Hit "Refresh" in the browser to see the styles applied to your application
+let URL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + "//";
+let el1 = document.createElement("link");
+el1.setAttribute("rel","stylesheet");
+el1.setAttribute("href",URL + "Content/EmbeddedFiles/theming.css");
+document.querySelector("head").appendChild(el1);
+let el2 = document.createElement("link");
+el2.setAttribute("rel","stylesheet");
+el2.setAttribute("href",URL + "Content/EmbeddedFiles/theming-variables.css");
+document.querySelector("head").appendChild(el2);
+let el3 = document.createElement("link");
+el3.setAttribute("rel","stylesheet");
+el3.setAttribute("href",URL + "Content/EmbeddedFiles/theming-fallbacks-default-theme.css");
+//OR el3.setAttribute("href",URL + "Content/EmbeddedFiles/theming-fallbacks-grey-theme.css");
+document.querySelector("head").appendChild(el3);
+``` 
 
-If you use this method, you can copy the styles into your application as per the simple method above when you go live. 
+## Upgrading
+To upgrade this module
 
-## Getting a local webserver
-You can go into your *Control Panel* -> *Programs and Features* -> *Turn Windows Features on or off* and switch on *Internet Information Services* to install IIS on your Windows machine. 
+1. Pull the latest repo
+2. If you have made changes to the *theming-variables.css* file in your local repo, merge them
+3. If new variables were added to the *theming-variables.css* file, change them as you see fit or ignore them
+4. Drag the updated *theming-variables.css* file into the EmbeddedFiles folder of your application
+6. Drag the *theming.css* file into the EmbeddedFiles folder of your application
+7. Drag the *theming-fallbacks-default-theme.css* or *theming-fallbacks-grey-theme.css* file into the EmbeddedFiles folder of your application
+8. Select "Overwrite" when prompted in Stadium
 
-If you have Python 3 installed, you can try this: https://stackoverflow.com/questions/5050851/best-lightweight-web-server-only-static-content-for-windows
-
-Other webservers can be found here: https://www.elegantthemes.com/blog/wordpress/best-web-servers-for-windows-and-linux
-
-More webservers are only Google a search away...
+## ToDo
+1. Remove !important from theme stylesheets and from kit
+2. Remove & .page-content display bug when fixed

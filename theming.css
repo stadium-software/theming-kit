@@ -105,7 +105,12 @@ html {
     border-color: var(--checkbox-checked-tick-color, var(--checkbox-checked-tick-color-fallback));
     background-color: transparent;
 }
-
+& input[type=checkbox] ~ label {
+    background-image: var(--checkbox-border-image, var(--checkbox-border-image-fallback)) !important;
+}
+& input[type=checkbox]:checked ~ label {
+    background-image: var(--checkbox-checked-border-image, var(--checkbox-checked-border-image-fallback)) !important;
+}
 /*--CheckboxList----------------------------------------------------------------*/
 & .check-box-list-container {
     background-color: var(--checkboxlist-background-color, var(--checkboxlist-background-color-fallback));
@@ -348,11 +353,11 @@ html {
     background: var(--radio-button-list-background-color, var(--radio-button-list-background-color-fallback));
 }
 /*REMOVE IMPORTANT*/
-& input[type="radio"]~label {
+& input[type="radio"] ~ label {
     border-color: var(--radio-button-list-item-border-color, var(--radio-button-list-item-border-color-fallback)) !important;
     background-image: var(--radio-button-list-background, var(--radio-button-list-background-fallback)) !important;
 }
-& input[type="radio"]:checked~label {
+& input[type="radio"]:checked ~ label {
     background-image: var(--radio-button-list-selected-background, var(--radio-button-list-selected-background-fallback)) !important;
 }
 
@@ -372,11 +377,17 @@ html {
     right: var(--textbox-password-icon-right-position, var(--textbox-password-icon-right-position-fallback));
     top: var(--textbox-password-icon-top-position, var(--textbox-password-icon-top-position-fallback));
 }
+& .show-password-icon:hover {
+    opacity: 0.6;
+}
 & .hide-password-icon,
 & .hide-password-icon:hover {
     background-image: var(--textbox-hide-password-icon, var(--textbox-hide-password-icon-fallback));
     right: var(--textbox-password-icon-right-position, var(--textbox-password-icon-right-position-fallback));
     top: var(--textbox-password-icon-top-position, var(--textbox-password-icon-top-position-fallback));
+}
+& .hide-password-icon:hover {
+    opacity: 0.6;
 }
 & .password-control {
     padding-right: var(--textbox-password-right-padding, var(--textbox-password-right-padding-fallback));
@@ -404,7 +415,7 @@ html {
 }
 
 & .upload-file-container .progress-bar-success {
-    background-color: var(--upload-file-upload-status-color, var(--upload-file-upload-status-color,-fallback));
+    background-color: var(--upload-file-upload-status-color, var(--upload-file-upload-status-color-fallback));
 }
 
 & .upload-file-container .single-file-upload-success-icon {
