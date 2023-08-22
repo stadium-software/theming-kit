@@ -11,6 +11,27 @@ html {
     display: block;
 }
 
+/*--Scrollbar-----------------------------------------------------------*/
+& ::-webkit-scrollbar {
+    /*the background of the bar itself*/
+    width: var(--scrollbar-width, var(--scrollbar-width-fallback));
+    height: var(--scrollbar-height, var(--scrollbar-height-fallback));
+}
+& ::-webkit-scrollbar-thumb {
+    /*Foreground: addresses the draggable scrolling element that resizes depending on the size of the scrollable element*/
+    background-color: var(--scrollbar-scroller-background-color, var(--scrollbar-scroller-background-color-fallback));
+}
+& ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-scroller-hover-background-color, var(--scrollbar-scroller-hover-background-color-fallback));
+}
+& ::-webkit-scrollbar-track {
+    /*Background: addresses the empty space “below” the progress bar*/
+    background-color: var(--scrollbar-bar-background-color, var(--scrollbar-bar-background-color-fallback));
+}
+& body {
+    scrollbar-width: var(--scrollbar-width, var(--scrollbar-width-fallback));
+    scrollbar-color: var(--scrollbar-scroller-background-color, var(--scrollbar-scroller-background-color-fallback)) var(--scrollbar-bar-background-color, var(--scrollbar-bar-background-color-fallback));
+}
 /*--Body----------------------------------------------------------------*/
 & body {
     background-color: var(--body-background-color, var(--body-background-color-fallback));
@@ -78,16 +99,24 @@ html {
 & .btn-default,
 & .btn-default.filter,
 & .btn-default:focus,
+& .btn-default:active,
 & .btn-default:focus:active {
-    background-color: var(--button-background-color, var(--button-background-color-fallback));
     border-color: var(--button-border-color, var(--button-border-color-fallback));
     color: var(--button-font-color, var(--button-font-color-fallback));
     box-shadow: var(--button-shadow1, var(--button-shadow1-fallback)), var(--button-shadow2, var(--button-shadow2-fallback));
     font-size: var(--button-font-size, var(--button-font-size-fallback));
+    transition: background-color .2s,box-shadow .2s;
 }
-
-& .btn-default:hover,
-& .btn-default:active:hover {
+& .btn-default,
+& .btn-default:focus,
+& .btn-default.filter {
+    background-color: var(--button-background-color, var(--button-background-color-fallback));
+}
+& .btn-default:active,
+& .btn-default:focus:active {
+    background-color: var(--button-click-background-color, var(--button-click-background-color-fallback));
+}
+& .btn-default:hover {
     background-color: var(--button-hover-background-color, var(--button-hover-background-color-fallback));
     color: var(--button-hover-font-color, var(--button-hover-font-color-fallback));
     box-shadow: var(--button-hover-shadow1, var(--button-hover-shadow1-fallback)), var(--button-hover-shadow2, var(--button-hover-shadow2-fallback));
@@ -165,21 +194,24 @@ html {
     border-bottom-color: var(--datagrid-table-border-color, var(--datagrid-table-border-color-fallback));
     background-color: var(--datagrid-table-heading-row-background-color, var(--datagrid-table-heading-row-background-color-fallback));
 }
-
+& .data-grid-container table.table[data-sortable] th {
+    text-align: var(--datagrid-table-heading-alignment, var(--datagrid-table-heading-alignment-fallback));
+}
 & .data-grid-container table.table[data-sortable] th a {
     color: var(--datagrid-table-heading-font-color, var(--datagrid-table-heading-font-color-fallback));
-    border: none;
     text-transform: var(--datagrid-table-heading-case, var(--datagrid-table-heading-case-fallback));
+    border: none;
+    text-decoration: underline;
 }
-
 & .data-grid-container table.table[data-sortable] th a:hover {
     color: var(--datagrid-table-heading-font-hover-color, var(--datagrid-table-heading-font-hover-color-fallback));
 }
-
 & .data-grid-container table.table-striped>tbody>tr:nth-of-type(odd) {
     background-color: var(--datagrid-table-odd-rows-background-color, var(--datagrid-table-odd-rows-background-color-fallback));
 }
-
+& .data-grid-container table.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: var(--datagrid-table-odd-rows-background-color, var(--datagrid-table-odd-rows-background-color-fallback));
+}
 & .data-grid-container table.table-striped>tbody>tr:nth-of-type(even) {
     background-color: var(--datagrid-table-even-rows-background-color, var(--datagrid-table-even-rows-background-color-fallback));
 }
@@ -188,8 +220,8 @@ html {
 }
 & .data-grid-container table.table>tbody>tr>td {
     border-top-color: var(--datagrid-table-border-color, var(--datagrid-table-border-color-fallback));
+    color: var(--datagrid-table-font-color, var(--datagrid-table-font-color-fallback));
 }
-
 & .data-grid-container table.table>tfoot>tr>td {
     border-top-color: var(--datagrid-table-border-color, var(--datagrid-table-border-color-fallback));
 }
@@ -284,44 +316,103 @@ html {
 
 /*--Link----------------------------------------------------------------*/
 & .btn-link,
-& .btn-link:hover {
+& .btn-link:hover,
+& .btn-link:focus {
     color: var(--link-color, var(--link-color-fallback));
     font-weight: normal;
 }
 
 /*--Menu----------------------------------------------------------------*/
+& .container-fluid {
+    padding-right: var(--menu-padding-right, var(--menu-padding-right-fallback));
+    padding-left: var(--menu-padding-left, var(--menu-padding-left-fallback));
+}
 & .navbar-default,
-& .navbar-default .dropdown-menu {
+& .navbar-default .dropdown-menu,
+& .dropdown-menu>li {
     background-color: var(--menu-background-color, var(--menu-background-color-fallback));
     border-color: var(--menu-border-color, var(--menu-border-color-fallback));
     color: var(--menu-font-color, var(--menu-font-color-fallback));
-    padding-right: 0;
 }
-
+& .navbar-default .navbar-nav li,
+& .navbar-left li {
+    text-transform: var(--menu-font-case, var(--menu-font-case-fallback));
+}
+& .dropdown-submenu.expand-left>a:after,
+& .dropdown-submenu.expand-right>a:after {
+    color: var(--menu-font-color, var(--menu-font-color-fallback));
+}
+& .container:not(.mobile) .navbar-default .navbar-nav li,
+& .container:not(.mobile) .navbar-left li {
+    height: var(--menu-subitem-height, var(--menu-subitem-height-fallback));
+    display: flex;
+    align-items: center;
+}
+& .expand-left>.dropdown-submenu>.dropdown-menu,
+& .expand-left.dropdown-submenu>.dropdown-menu,
+& .expand-right>.dropdown-submenu>.dropdown-menu,
+& .expand-right.dropdown-submenu>.dropdown-menu {
+    top: 5px;
+}
+& .container:not(.mobile) .navbar-left .dropdown-menu {
+    top: -1px;
+}
 & .navbar-nav>li:hover,
 & .dropdown-menu>li:hover {
     color: var(--menu-item-hover-font-color, var(--menu-item-hover-font-color-fallback));
     background-color: var(--menu-item-hover-background-color, var(--menu-item-hover-background-color-fallback));
+    background-image: var(--menu-item-hover-background-color);
 }
-
+& .container:not(.mobile) .nav.navbar-left>li,
+& .container:not(.mobile) .nav.navbar-nav>li {
+    height: var(--menu-item-height, var(--menu-item-height-fallback));
+    display: flex;
+    align-items: center;
+}
+& .container:not(.mobile) .navbar.navbar-default,
+& .container:not(.mobile) .navbar.navbar-default .dropdown-menu {
+    border-radius: var(--menu-border-radius, var(--menu-border-radius-fallback));
+}
+& .dropdown-menu {
+    padding: 0;
+}
 & .container:not(.mobile) .navbar-nav>li>a {
-    padding-top: var(--menu-item-top-padding, var(--menu-item-top-padding-fallback));
+    padding-top: 0;
     padding-right: var(--menu-item-right-padding, var(--menu-item-right-padding-fallback));
-    padding-bottom: var(--menu-item-bottom-padding, var(--menu-item-bottom-padding-fallback));
+    padding-bottom: 0;
     padding-left: var(--menu-item-left-padding, var(--menu-item-left-padding-fallback));
 }
 
 & .dropdown-menu>li>a {
-    padding-top: var(--menu-subitem-top-padding, var(--menu-subitem-top-padding-fallback));
+    padding-top: 0;
     padding-right: var(--menu-subitem-right-padding, var(--menu-subitem-right-padding-fallback));
-    padding-bottom: var(--menu-subitem-bottom-padding, var(--menu-subitem-bottom-padding-fallback));
+    padding-bottom: 0;
     padding-left: var(--menu-subitem-left-padding, var(--menu-subitem-left-padding-fallback));
 }
-
 & .container.mobile .nav .caret {
+    color: var(--menu-mobile-item-icon-color, var(--menu-mobile-item-icon-color-fallback));
     background-color: var(--menu-mobile-item-background-color, var(--menu-mobile-item-background-color-fallback));
+    background-image: var(--menu-mobile-item-background-color, var(--menu-mobile-item-background-color-fallback));
 }
-
+& .hamburger>.caret,
+& .container.mobile .dropdown-submenu>a:after {
+    color: var(--menu-mobile-item-icon-color, var(--menu-mobile-item-icon-color-fallback));
+}
+& .container.mobile .navbar-left>li,
+& .container.mobile .navbar-nav>li {
+    height: auto;
+    display: block;
+}
+& .container.mobile .navbar-default .navbar-nav>.open>a,
+& .container.mobile .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: var(--menu-font-color, var(--menu-font-color-fallback));
+}
+& .container.mobile .navbar-default .navbar-nav>.open>a:hover,
+& .container.mobile .nav>li>a:hover {
+    color: var(--menu-item-hover-font-color, var(--menu-item-hover-font-color-fallback));
+    background-color: var(--menu-item-hover-background-color, var(--menu-item-hover-background-color-fallback));
+    background-image: var(--menu-item-hover-background-color);
+}
 & .navbar-default .navbar-toggle:focus,
 & .navbar-default .navbar-toggle:hover,
 & .navbar-left .navbar-toggle:focus,
@@ -363,13 +454,29 @@ html {
 
 /*--TextBox----------------------------------------------------------------*/
 & .text-box-input,
-& .text-box-input:active {
+& .text-box-input:active,
+& .password-control,
+& .password-control:active {
     color: var(--textbox-font-color, var(--textbox-font-color-fallback));
     background-color: var(--textbox-background-color, var(--textbox-background-color-fallback));
+    border-top-color: var(--textbox-top-border-color, var(--textbox-top-border-color-fallback));
+    border-right-color: var(--textbox-right-border-color, var(--textbox-right-border-color-fallback));
     border-bottom-color: var(--textbox-bottom-border-color, var(--textbox-bottom-border-color-fallback));
+    border-left-color: var(--textbox-left-border-color, var(--textbox-left-border-color-fallback));
 }
-& .text-box-input:focus {
-    border-bottom-color: var(--textbox-focus-bottom-border-color, var(--textbox-focus-bottom-border-color-fallback));
+& .text-box-input:hover,
+& .password-control:hover {
+    border-top-color: var(--textbox-top-hover-border-color, var(--textbox-top-hover-border-color-fallback));
+    border-right-color: var(--textbox-right-hover-border-color, var(--textbox-right-hover-border-color-fallback));
+    border-bottom-color: var(--textbox-bottom-hover-border-color, var(--textbox-bottom-hover-border-color-fallback));
+    border-left-color: var(--textbox-left-hover-border-color, var(--textbox-left-hover-border-color-fallback));
+}
+& .text-box-input:focus,
+& .password-control:focus {
+    border-top-color: var(--textbox-top-focus-border-color, var(--textbox-top-focus-border-color-fallback));
+    border-right-color: var(--textbox-right-focus-border-color, var(--textbox-right-focus-border-color-fallback));
+    border-bottom-color: var(--textbox-bottom-focus-border-color, var(--textbox-bottom-focus-border-color-fallback));
+    border-left-color: var(--textbox-left-focus-border-color, var(--textbox-left-focus-border-color-fallback));
 }
 & .show-password-icon,
 & .show-password-icon:hover {
@@ -397,31 +504,28 @@ html {
 & .upload-file-container {
     color: var(--upload-file-box-font-color, var(--upload-file-box-font-color-fallback));
 }
-
 & .upload-file-container form {
     border-color: var(--upload-file-box-border-color, var(--upload-file-box-border-color-fallback));
     border-style: var(--upload-file-box-border-style, var(--upload-file-box-border-style-fallback));
     border-width: var(--upload-file-box-border-width, var(--upload-file-box-border-width-fallback));
 }
-
+& .upload-file-container form:hover {
+    border-color: var(--upload-file-box-hover-border-color, var(--upload-file-box-hover-border-color-fallback));
+}
 & .upload-file-container .single-file-upload-error-icon {
     background-image: var(--upload-file-upload-status-error-icon, var(--upload-file-upload-status-error-icon-fallback));
 }
-
 & .upload-file-container .single-file-upload-filename,
 & .upload-file-container .single-file-file-name-container {
     color: var(--upload-file-upload-status-font-color, var(--upload-file-upload-status-font-color-fallback));
     font-size: var(--upload-file-upload-status-font-size, var(--upload-file-upload-status-font-size-fallback));
 }
-
 & .upload-file-container .progress-bar-success {
     background-color: var(--upload-file-upload-status-color, var(--upload-file-upload-status-color-fallback));
 }
-
 & .upload-file-container .single-file-upload-success-icon {
     background-image: var(--upload-file-upload-status-success-icon, var(--upload-file-upload-status-success-icon-fallback));
 }
-
 & .upload-file-container .single-file-upload-delete-icon {
     background-image: var(--upload-file-upload-status-success-delete-icon, var(--upload-file-upload-status-success-delete-icon-fallback));
 }
