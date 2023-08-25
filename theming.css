@@ -65,6 +65,7 @@ html {
     padding: var(--form-control-topbottom-padding, var(--form-control-topbottom-padding-fallback)) var(--form-control-leftright-padding, var(--form-control-leftright-padding-fallback));
     font-size: var(--form-control-font-size, var(--form-control-font-size-fallback));
     color: var(--form-control-font-color, var(--form-control-font-color-fallback));
+
     background-color: var(--form-control-background-color, var(--form-control-background-color-fallback));
     border-top: 1px solid var(--form-control-top-border-color, var(--form-control-top-border-color-fallback));
     border-right: 1px solid var(--form-control-right-border-color, var(--form-control-right-border-color-fallback));
@@ -72,11 +73,23 @@ html {
     border-left: 1px solid var(--form-control-left-border-color, var(--form-control-left-border-color-fallback));
     transition: var(--form-control-bottom-border-transition, var(--form-control-bottom-border-transition-fallback));
 }
-& .form-control:focus {
+& .form-control:focus,
+& .date-picker-container .form-control:focus,
+& .drop-down-container .form-control:focus {
+    background-color: var(--form-control-focus-background-color, var(--form-control-focus-background-color-fallback));
     border-top: 1px solid var(--form-control-focus-top-border-color, var(--form-control-focus-top-border-color-fallback));
     border-right: 1px solid var(--form-control-focus-right-border-color, var(--form-control-focus-right-border-color-fallback));
     border-bottom-color: var(--form-control-focus-bottom-border-color, var(--form-control-focus-bottom-border-color-fallback));
     border-left: 1px solid var(--form-control-focus-left-border-color, var(--form-control-focus-left-border-color-fallback));
+}
+& .form-control:hover,
+& .date-picker-container .form-control:hover,
+& .drop-down-container .form-control:hover {
+    background-color: var(--form-control-hover-background-color, var(--form-control-hover-background-color-fallback));
+    border-top: 1px solid var(--form-control-hover-top-border-color, var(--form-control-hover-top-border-color-fallback));
+    border-right: 1px solid var(--form-control-hover-right-border-color, var(--form-control-hover-right-border-color-fallback));
+    border-bottom-color: var(--form-control-hover-bottom-border-color, var(--form-control-hover-bottom-border-color-fallback));
+    border-left: 1px solid var(--form-control-hover-left-border-color, var(--form-control-hover-left-border-color-fallback));
 }
 & .form-control[disabled],
 & .form-control[readonly] {
@@ -93,6 +106,9 @@ html {
 ::selection {
     color: var(--form-control-selected-font-color, var(--form-control-selected-font-color-fallback));
     background-color: var(--form-control-selected-background-color, var(--form-control-selected-background-color-fallback));
+}
+& .required-indicator:after {
+    font-size: var(--form-control-required-indicator-font-size, var(--form-control-required-indicator-font-size-fallback));
 }
 
 /*--Buttons----------------------------------------------------------------*/
@@ -171,6 +187,10 @@ html {
     background-color: var(--datagrid-searchbox-button-background-color, var(--datagrid-searchbox-button-background-color-fallback));
     background-image: var(--datagrid-searchbox-button-icon, var(--datagrid-searchbox-button-icon-fallback));
     border-color: var(--datagrid-searchbox-button-border-color, var(--datagrid-searchbox-button-border-color-fallback));
+    height: var(--form-control-height, var(--form-control-height-fallback));
+    width: var(--form-control-height, var(--form-control-height-fallback));
+    background-position: 50%;
+    background-size: calc(var(--form-control-height, var(--form-control-height-fallback)) / 2) calc(var(--form-control-height, var(--form-control-height-fallback)) / 2);
 }
 & .data-grid-header .data-grid-search-button:hover,
 & .data-grid-header .data-grid-search-button:active,
@@ -180,16 +200,24 @@ html {
 }
 & .data-grid-header .data-grid-search-help-button {
     background-image: var(--datagrid-searchbox-help-icon, var(--datagrid-searchbox-help-icon-fallback));
+    height: var(--form-control-height, var(--form-control-height-fallback));
+    width: var(--form-control-height, var(--form-control-height-fallback));
+    background-position: 50%;
+    background-size: calc(var(--form-control-height, var(--form-control-height-fallback)) / 2) calc(var(--form-control-height, var(--form-control-height-fallback)) / 2);
 }
-
+& .data-grid-quick-help-divider {
+    height: calc(var(--form-control-height, var(--form-control-height-fallback)) - 4px);
+}
 & .data-grid-header .data-grid-export-button {
     background-image: var(--datagrid-searchbox-export-icon, var(--datagrid-searchbox-export-icon-fallback));
+    height: var(--form-control-height, var(--form-control-height-fallback));
+    width: var(--form-control-height, var(--form-control-height-fallback));
+    background-position: 50%;
+    background-size: calc(var(--form-control-height, var(--form-control-height-fallback)) / 2) calc(var(--form-control-height, var(--form-control-height-fallback)) / 2);
 }
-
 & .data-grid-container table.table {
     border-color: var(--datagrid-table-border-color, var(--datagrid-table-border-color-fallback));
 }
-
 & .data-grid-container table.table>thead>tr {
     border-bottom-color: var(--datagrid-table-border-color, var(--datagrid-table-border-color-fallback));
     background-color: var(--datagrid-table-heading-row-background-color, var(--datagrid-table-heading-row-background-color-fallback));
@@ -205,6 +233,11 @@ html {
 }
 & .data-grid-container table.table[data-sortable] th a:hover {
     color: var(--datagrid-table-heading-font-hover-color, var(--datagrid-table-heading-font-hover-color-fallback));
+}
+& .data-grid-container>.table>tfoot>tr>th,
+& .data-grid-container>.table>tbody>tr>th,
+& .data-grid-container>.table>thead>tr>th{
+    padding: var(--datagrid-table-cell-padding, var(--datagrid-table-cell-padding-fallback));
 }
 & .data-grid-container table.table-striped>tbody>tr:nth-of-type(odd) {
     background-color: var(--datagrid-table-odd-rows-background-color, var(--datagrid-table-odd-rows-background-color-fallback));
@@ -266,11 +299,19 @@ html {
     border-bottom-color: var(--datepicker-textbox-bottom-border-color, var(--datepicker-textbox-bottom-border-color-fallback));
     border-left-color: var(--datepicker-textbox-left-border-color, var(--datepicker-textbox-left-border-color-fallback));
 }
-& .date-picker-container input:focus {
+& .date-picker-container input.form-control:focus {
+    background-color: var(--datepicker-textbox-focus-background-color, var(--datepicker-textbox-focus-background-color-fallback));
     border-top-color: var(--datepicker-textbox-focus-top-border-color, var(--datepicker-textbox-focus-top-border-color-fallback));
     border-right-color: var(--datepicker-textbox-focus-right-border-color, var(--datepicker-textbox-focus-right-border-color-fallback));
     border-bottom-color: var(--datepicker-textbox-focus-bottom-border-color, var(--datepicker-textbox-focus-bottom-border-color-fallback));
     border-left-color: var(--datepicker-textbox-focus-left-border-color, var(--datepicker-textbox-focus-left-border-color-fallback));
+}
+& .date-picker-container input.form-control:hover {
+    background-color: var(--datepicker-textbox-hover-background-color, var(--datepicker-textbox-hover-background-color-fallback));
+    border-top-color: var(--datepicker-textbox-hover-top-border-color, var(--datepicker-textbox-hover-top-border-color-fallback));
+    border-right-color: var(--datepicker-textbox-hover-right-border-color, var(--datepicker-textbox-hover-right-border-color-fallback));
+    border-bottom-color: var(--datepicker-textbox-hover-bottom-border-color, var(--datepicker-textbox-hover-bottom-border-color-fallback));
+    border-left-color: var(--datepicker-textbox-hover-left-border-color, var(--datepicker-textbox-hover-left-border-color-fallback));
 }
 & .date-picker-container input[disabled] {
     color: var(--datepicker-textbox-disabled-font-color, var(--datepicker-textbox-disabled-font-color-fallback)); 
@@ -279,6 +320,10 @@ html {
     background-color: var(--datepicker-textbox-button-background-color, var(--datepicker-textbox-button-background-color-fallback));
     border-color: var(--datepicker-textbox-button-border-color, var(--datepicker-textbox-button-border-color-fallback));
     background-image: var(--datepicker-textbox-button-icon, var(--datepicker-textbox-button-icon-fallback));
+    height: var(--form-control-height, var(--form-control-height-fallback));
+    width: var(--form-control-height, var(--form-control-height-fallback));
+    background-position: 50%;
+    background-size: calc(var(--form-control-height, var(--form-control-height-fallback)) / 2) calc(var(--form-control-height, var(--form-control-height-fallback)) / 2);
 }
 
 & .date-picker-container .datepicker-btn:hover {
@@ -306,7 +351,18 @@ html {
 & .drop-down-container select,
 & .drop-down-container select:focus {
     background-color: var(--dropdown-background-color, var(--dropdown-background-color-fallback));
+    border-top-color: var(--dropdown-top-border-color, var(--dropdown-top-border-color-fallback));
+    border-right-color: var(--dropdown-right-border-color, var(--dropdown-right-border-color-fallback));
     border-bottom-color: var(--dropdown-bottom-border-color, var(--dropdown-bottom-border-color-fallback));
+    border-left-color: var(--dropdown-left-border-color, var(--dropdown-left-border-color-fallback));
+    background-position: calc(100% - 15px) 50%, calc(100% - 10px) 50%;
+}
+& .drop-down-container select.form-control:hover {
+    background-color: var(--dropdown-hover-background-color, var(--dropdown-hover-background-color-fallback));
+    border-top-color: var(--dropdown-hover-top-border-color, var(--dropdown-hover-top-border-color-fallback));
+    border-right-color: var(--dropdown-hover-right-border-color, var(--dropdown-hover-right-border-color-fallback));
+    border-bottom-color: var(--dropdown-hover-bottom-border-color, var(--dropdown-hover-bottom-border-color-fallback));
+    border-left-color: var(--dropdown-hover-left-border-color, var(--dropdown-hover-left-border-color-fallback));
 }
 
 /*--Label----------------------------------------------------------------*/
@@ -458,11 +514,11 @@ html {
 & .password-control,
 & .password-control:active {
     color: var(--textbox-font-color, var(--textbox-font-color-fallback));
-    background-color: var(--textbox-background-color, var(--textbox-background-color-fallback));
-    border-top-color: var(--textbox-top-border-color, var(--textbox-top-border-color-fallback));
-    border-right-color: var(--textbox-right-border-color, var(--textbox-right-border-color-fallback));
-    border-bottom-color: var(--textbox-bottom-border-color, var(--textbox-bottom-border-color-fallback));
-    border-left-color: var(--textbox-left-border-color, var(--textbox-left-border-color-fallback));
+    background-color: var(--textbox-background-color, var(--form-control-background-color-fallback));
+    border-top-color: var(--textbox-top-border-color, var(--form-control-top-border-color-fallback));
+    border-right-color: var(--textbox-right-border-color, var(--form-control-right-border-color-fallback));
+    border-bottom-color: var(--textbox-bottom-border-color, var(--form-control-bottom-border-color-fallback));
+    border-left-color: var(--textbox-left-border-color, var(--form-control-left-border-color-fallback));
 }
 & .text-box-input:hover,
 & .password-control:hover {

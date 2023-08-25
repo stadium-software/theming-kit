@@ -55,16 +55,25 @@
     /*--form-control-bottom-border-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;*/
     /*--form-control-left-border-color: transparent;*/
 
+    /*--form-control-focus-background-color: #f9f9f9;*/
     /*--form-control-focus-top-border-color: transparent;*/
     /*--form-control-focus-right-border-color: transparent;*/
     /*--form-control-focus-bottom-border-color: #ffc60c;*/
     /*--form-control-focus-left-border-color: transparent;*/
+
+    /*--form-control-hover-background-color: #f9f9f9;*/
+    /*--form-control-hover-top-border-color: transparent;*/
+    /*--form-control-hover-right-border-color: transparent;*/
+    /*--form-control-hover-bottom-border-color: #ffc60c;*/
+    /*--form-control-hover-left-border-color: transparent;*/
 
     /*--form-control-selected-font-color: inherit;*/
     /*--form-control-selected-background-color: inherit;*/
 
     /*--form-control-disabled-font-color: #a7a7a7;*/
     /*--form-control-disabled-background-color: #e6e6e6;*/
+
+    /*--form-control-required-indicator-font-size: 12px;*/
 
     /*BUTTON*/
     /*--button-background-color: #39f;*/
@@ -114,7 +123,7 @@
     /*--datagrid-searchbox-focus-bottom-border-color: #ffc60c;*/
     /*--datagrid-searchbox-focus-left-border-color: transparent;*/
 
-    /*--datagrid-searchbox-button-font-color-fallback: #fff;*/
+    /*--datagrid-searchbox-button-font-color: #fff;*/
     /*--datagrid-searchbox-button-background-color: #3399ff;*/
     /*--datagrid-searchbox-button-border-color: #2196f3;*/
     /*--datagrid-searchbox-button-hover-background-color: #1976d2;*/
@@ -132,6 +141,7 @@
     /*--datagrid-table-font-color: #6f6f6f;*/
     /*--datagrid-table-even-rows-background-color:#fff; */
     /*--datagrid-table-odd-rows-background-color: #f9f9f9;*/
+    /*--datagrid-table-cell-padding: 8px;*/
     
     /*--datagrid-table-pagination-font-size: 14px;*/
     /*--datagrid-table-pagination-font-color: #9a9a9a;*/
@@ -156,10 +166,17 @@
     /*--datepicker-textbox-bottom-border-color: #1976d2;*/
     /*--datepicker-textbox-left-border-color: transparent;*/
 
+    /*--datepicker-textbox-focus-background-color: #f9f9f9;*/
     /*--datepicker-textbox-focus-top-border-color: transparent;*/
     /*--datepicker-textbox-focus-right-border-color: transparent;*/
     /*--datepicker-textbox-focus-bottom-border-color: #ffc60c;*/
     /*--datepicker-textbox-focus-left-border-color: transparent;*/
+
+    /*--datepicker-textbox-hover-background-color: #f9f9f9;*/
+    /*--datepicker-textbox-hover-top-border-color: transparent;*/
+    /*--datepicker-textbox-hover-right-border-color: transparent;*/
+    /*--datepicker-textbox-hover-bottom-border-color: #ffc60c;*/
+    /*--datepicker-textbox-hover-left-border-color: transparent;*/
 
     /*--datepicker-textbox-disabled-font-color: #ccc;*/
 
@@ -177,7 +194,16 @@
 
     /*DROPDOWN*/
     /*--dropdown-background-color: #f9f9f9;*/
+    /*--dropdown-top-border-color: #1976d2;*/
+    /*--dropdown-right-border-color: #1976d2;*/
     /*--dropdown-bottom-border-color: #1976d2;*/
+    /*--dropdown-left-border-color: #1976d2;*/
+
+    /*--dropdown-hover-background-color: #f9f9f9;*/
+    /*--dropdown-hover-top-border-color: #1976d2;*/
+    /*--dropdown-hover-right-border-color: #1976d2;*/
+    /*--dropdown-hover-bottom-border-color: #1976d2;*/
+    /*--dropdown-hover-left-border-color: #1976d2;*/
 
     /*LABEL*/
     /*--label-color: #777;*/

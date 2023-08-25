@@ -45,16 +45,25 @@
     --form-control-bottom-border-transition-fallback: none;
     --form-control-left-border-color-fallback: #ccc;
 
+    --form-control-focus-background-color-fallback: #ffffff;
     --form-control-focus-top-border-color-fallback: #00caea;
     --form-control-focus-right-border-color-fallback: #00caea;
     --form-control-focus-bottom-border-color-fallback: #00caea;
     --form-control-focus-left-border-color-fallback: #00caea;
+
+    --form-control-hover-background-color-fallback: #ffffff;
+    --form-control-hover-top-border-color-fallback: #00caea;
+    --form-control-hover-right-border-color-fallback: #00caea;
+    --form-control-hover-bottom-border-color-fallback: #00caea;
+    --form-control-hover-left-border-color-fallback: #00caea;
 
     --form-control-selected-font-color-fallback: var(--body-background-color, var(--body-background-color-fallback));
     --form-control-selected-background-color-fallback: var(--button-border-color, var(--button-border-color-fallback));
 
     --form-control-disabled-font-color-fallback: #b8b8b8;
     --form-control-disabled-background-color-fallback: #e6e6e6;
+
+    --form-control-required-indicator-font-size-fallback: 12px;
 
     /*BUTTON*/
     --button-background-color-fallback: #b3b3b3;
@@ -122,6 +131,7 @@
     --datagrid-table-font-color-fallback: var(--font-color, var(--font-color-fallback));
     --datagrid-table-even-rows-background-color-fallback: var(--body-background-color, var(--body-background-color-fallback));
     --datagrid-table-odd-rows-background-color-fallback: #f9f9f9;
+    --datagrid-table-cell-padding-fallback: 8px;
 
     --datagrid-table-pagination-font-size-fallback: var(--font-size, var(--font-size-fallback));
     --datagrid-table-pagination-font-color-fallback: var(--form-control-font-color, var(--form-control-font-color-fallback));
@@ -146,10 +156,17 @@
     --datepicker-textbox-bottom-border-color-fallback: var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback));
     --datepicker-textbox-left-border-color-fallback: var(--form-control-left-border-color, var(--form-control-left-border-color-fallback));
 
+    --datepicker-textbox-focus-background-color-fallback: var(--form-control-focus-background-color, var(--form-control-focus-background-color-fallback));
     --datepicker-textbox-focus-top-border-color-fallback: var(--form-control-focus-top-border-color, var(--form-control-focus-top-border-color-fallback));
     --datepicker-textbox-focus-right-border-color-fallback: var(--form-control-focus-right-border-color, var(--form-control-focus-right-border-color-fallback));
     --datepicker-textbox-focus-bottom-border-color-fallback: var(--form-control-focus-bottom-border-color, var(--form-control-focus-bottom-border-color-fallback));
     --datepicker-textbox-focus-left-border-color-fallback: var(--form-control-focus-left-border-color, var(--form-control-focus-left-border-color-fallback));
+
+    --datepicker-textbox-hover-background-color-fallback: var(--form-control-hover-background-color, var(--form-control-hover-background-color-fallback));
+    --datepicker-textbox-hover-top-border-color-fallback: var(--form-control-hover-top-border-color, var(--form-control-hover-top-border-color-fallback));
+    --datepicker-textbox-hover-right-border-color-fallback: var(--form-control-hover-right-border-color, var(--form-control-hover-right-border-color-fallback));
+    --datepicker-textbox-hover-bottom-border-color-fallback: var(--form-control-hover-bottom-border-color, var(--form-control-hover-bottom-border-color-fallback));
+    --datepicker-textbox-hover-left-border-color-fallback: var(--form-control-hover-left-border-color, var(--form-control-hover-left-border-color-fallback));
 
     --datepicker-textbox-disabled-font-color-fallback: var(--form-control-font-color, var(--form-control-font-color-fallback));
 
@@ -167,7 +184,16 @@
 
     /*DROPDOWN*/
     --dropdown-background-color-fallback: var(--form-control-background-color, var(--form-control-background-color-fallback));
+    --dropdown-top-border-color-fallback: var(--form-control-top-border-color, var(--form-control-top-border-color-fallback));
+    --dropdown-right-border-color-fallback: var(--form-control-right-border-color, var(--form-control-right-border-color-fallback));
     --dropdown-bottom-border-color-fallback: var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback));
+    --dropdown-left-border-color-fallback: var(--form-control-left-border-color, var(--form-control-left-border-color-fallback));
+
+    --dropdown-hover-background-color-fallback: var(--form-control-hover-background-color, var(--form-control-hover-background-color-fallback));
+    --dropdown-hover-top-border-color-fallback: var(--form-control-hover-top-border-color, var(--form-control-hover-top-border-color-fallback));
+    --dropdown-hover-right-border-color-fallback: var(--form-control-hover-right-border-color, var(--form-control-hover-right-border-color-fallback));
+    --dropdown-hover-bottom-border-color-fallback: var(--form-control-hover-bottom-border-color, var(--form-control-hover-bottom-border-color-fallback));
+    --dropdown-hover-left-border-color-fallback: var(--form-control-hover-left-border-color, var(--form-control-hover-left-border-color-fallback));
 
     /*LABEL*/
     --label-color-fallback: var(--font-color, var(--font-color-fallback));
