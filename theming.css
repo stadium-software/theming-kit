@@ -45,10 +45,15 @@ html {
 & body,
 & input,
 & select,
-& .btn-default,
 & textarea {
     font-family: var(--font-family, var(--font-family-fallback));
     color: var(--font-color, var(--font-color-fallback));
+    font-size: var(--font-size, var(--font-size-fallback));
+}
+& .btn-default,
+& .btn-link,
+& .data-grid-container .table>tbody>tr>td button {
+    font-family: var(--font-family, var(--font-family-fallback));
     font-size: var(--font-size, var(--font-size-fallback));
 }
 
@@ -92,13 +97,30 @@ html {
     border-left: 1px solid var(--form-control-hover-left-border-color, var(--form-control-hover-left-border-color-fallback));
 }
 & .form-control[disabled],
-& .form-control[readonly] {
-    color: var(--form-control-disabled-font-color, var(--form-control-disabled-font-color-fallback));
-}
+& .form-control[readonly],
+& .form-control[disabled]:focus,
+& .form-control[readonly]:focus,
 & .form-control[disabled]:active,
-& .form-control[readonly]:active {
+& .form-control[readonly]:active,
+& .form-control[disabled]:hover,
+& .form-control[readonly]:hover,
+& .date-picker-container .form-control[disabled]:hover,
+& .date-picker-container .form-control[readonly]:hover,
+& .drop-down-container .form-control[disabled]:hover,
+& .drop-down-container .form-control[readonly]:hover {
     color: var(--form-control-disabled-font-color, var(--form-control-disabled-font-color-fallback));
     background-color: var(--form-control-disabled-background-color, var(--form-control-disabled-background-color-fallback)); 
+    border-top: 1px solid var(--form-control-top-border-color, var(--form-control-top-border-color-fallback));
+    border-right: 1px solid var(--form-control-right-border-color, var(--form-control-right-border-color-fallback));
+    border-bottom-color: var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback));
+    border-left: 1px solid var(--form-control-left-border-color, var(--form-control-left-border-color-fallback));
+}
+& .action-column label[disabled=disabled],
+& .checkbox label[disabled=disabled],
+& .checkbox-inline label[disabled=disabled],
+& .checkbox input[type=checkbox][disabled]~label,
+& .checkbox-inline input[type=checkbox][disabled]~label {
+    color: var(--form-control-disabled-font-color, var(--form-control-disabled-font-color-fallback));
 }
 & .upload-file-container form {
     max-width: var(--form-control-width, var(--form-control-width-fallback));
@@ -230,12 +252,13 @@ html {
     text-transform: var(--datagrid-table-heading-case, var(--datagrid-table-heading-case-fallback));
     border: none;
     text-decoration: underline;
+    font-size: var(--datagrid-table-heading-font-size, var(--datagrid-table-heading-font-size-fallback));
 }
 & .data-grid-container table.table[data-sortable] th a:hover {
     color: var(--datagrid-table-heading-font-hover-color, var(--datagrid-table-heading-font-hover-color-fallback));
 }
-& .data-grid-container>.table>tfoot>tr>th,
-& .data-grid-container>.table>tbody>tr>th,
+& .data-grid-container>.table>tfoot>tr>td,
+& .data-grid-container>.table>tbody>tr>td,
 & .data-grid-container>.table>thead>tr>th{
     padding: var(--datagrid-table-cell-padding, var(--datagrid-table-cell-padding-fallback));
 }
@@ -382,6 +405,9 @@ html {
 & .container-fluid {
     padding-right: var(--menu-padding-right, var(--menu-padding-right-fallback));
     padding-left: var(--menu-padding-left, var(--menu-padding-left-fallback));
+}
+& .navbar-default {
+    padding-right: 0;
 }
 & .navbar-default,
 & .navbar-default .dropdown-menu,

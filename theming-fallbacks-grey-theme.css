@@ -123,6 +123,7 @@
 
     --datagrid-table-border-color-fallback: var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback));
     --datagrid-table-heading-row-background-color-fallback: var(--body-background-color, var(--body-background-color-fallback));
+    --datagrid-table-heading-font-size-fallback: var(--font-size-smaller, var(--font-size-smaller-fallback));
     --datagrid-table-heading-font-color-fallback: var(--link-color, var(--link-color-fallback));
     --datagrid-table-heading-font-hover-color-fallback: var(--link-color, var(--link-color-fallback));
     --datagrid-table-heading-case-fallback: uppercase;
