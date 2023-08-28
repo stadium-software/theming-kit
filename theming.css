@@ -244,17 +244,18 @@ html {
     border-bottom-color: var(--datagrid-table-border-color, var(--datagrid-table-border-color-fallback));
     background-color: var(--datagrid-table-heading-row-background-color, var(--datagrid-table-heading-row-background-color-fallback));
 }
-& .data-grid-container table.table[data-sortable] th {
+& .data-grid-container>.table>thead>tr>th {
     text-align: var(--datagrid-table-heading-alignment, var(--datagrid-table-heading-alignment-fallback));
 }
-& .data-grid-container table.table[data-sortable] th a {
+& .data-grid-container>.table>thead>tr>th a,
+& .admin .data-grid-container>.table>thead>tr>th {
     color: var(--datagrid-table-heading-font-color, var(--datagrid-table-heading-font-color-fallback));
     text-transform: var(--datagrid-table-heading-case, var(--datagrid-table-heading-case-fallback));
     border: none;
     text-decoration: underline;
     font-size: var(--datagrid-table-heading-font-size, var(--datagrid-table-heading-font-size-fallback));
 }
-& .data-grid-container table.table[data-sortable] th a:hover {
+& .data-grid-container>.table>thead>tr>th a:hover {
     color: var(--datagrid-table-heading-font-hover-color, var(--datagrid-table-heading-font-hover-color-fallback));
 }
 & .data-grid-container>.table>tfoot>tr>td,
@@ -272,9 +273,10 @@ html {
     background-color: var(--datagrid-table-even-rows-background-color, var(--datagrid-table-even-rows-background-color-fallback));
 }
 & .data-grid-container .btn {
-        user-select: text;
+    user-select: text;
 }
-& .data-grid-container table.table>tbody>tr>td {
+& .data-grid-container table.table>tbody>tr>td,
+& .admin .data-grid-container table.table>tbody>tr>td {
     border-top-color: var(--datagrid-table-border-color, var(--datagrid-table-border-color-fallback));
     color: var(--datagrid-table-font-color, var(--datagrid-table-font-color-fallback));
 }
@@ -396,7 +398,9 @@ html {
 /*--Link----------------------------------------------------------------*/
 & .btn-link,
 & .btn-link:hover,
-& .btn-link:focus {
+& .btn-link:focus,
+& .admin .data-grid-container table.table>tbody>tr>td a,
+& .back-to-application .application-link {
     color: var(--link-color, var(--link-color-fallback));
     font-weight: normal;
 }
@@ -689,5 +693,9 @@ html {
     color: var(--notification-font-color, var(--notification-font-color-fallback));
     background-image: var(--notification-error-icon, var(--notification-error-icon-fallback)),
         linear-gradient(90deg, var(--notification-error-sidebar-color, var(--notification-error-sidebar-color-fallback)) var(--notification-sidebar-width, var(--notification-sidebar-width-fallback)), var(--notification-error-background-color, var(--notification-error-background-color-fallback)) var(--notification-sidebar-width, var(--notification-sidebar-width-fallback)));
+}
+/*--Application Users & Roles----------------------------------------------------------------*/
+.admin .data-grid-container tr {
+    height: auto;
 }
 }
