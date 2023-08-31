@@ -11,27 +11,6 @@ html {
     display: block;
 }
 
-/*--Scrollbar-----------------------------------------------------------*/
-& ::-webkit-scrollbar {
-    /*the background of the bar itself*/
-    width: var(--scrollbar-width, var(--scrollbar-width-fallback));
-    height: var(--scrollbar-height, var(--scrollbar-height-fallback));
-}
-& ::-webkit-scrollbar-thumb {
-    /*Foreground: addresses the draggable scrolling element that resizes depending on the size of the scrollable element*/
-    background-color: var(--scrollbar-scroller-background-color, var(--scrollbar-scroller-background-color-fallback));
-}
-& ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--scrollbar-scroller-hover-background-color, var(--scrollbar-scroller-hover-background-color-fallback));
-}
-& ::-webkit-scrollbar-track {
-    /*Background: addresses the empty space “below” the progress bar*/
-    background-color: var(--scrollbar-bar-background-color, var(--scrollbar-bar-background-color-fallback));
-}
-& body {
-    scrollbar-width: var(--scrollbar-width, var(--scrollbar-width-fallback));
-    scrollbar-color: var(--scrollbar-scroller-background-color, var(--scrollbar-scroller-background-color-fallback)) var(--scrollbar-bar-background-color, var(--scrollbar-bar-background-color-fallback));
-}
 /*--Body----------------------------------------------------------------*/
 & body {
     background-color: var(--body-background-color, var(--body-background-color-fallback));
@@ -219,6 +198,19 @@ html {
 & .data-grid-header .data-grid-search-button:focus,
 & .data-grid-header .data-grid-search-button:active:focus {
     background-color: var(--datagrid-searchbox-button-hover-background-color, var(--datagrid-searchbox-button-hover-background-color-fallback));
+}
+& .data-grid-header .clear-filter {
+    background: transparent var(--datagrid-clear-filter-icon, var(--datagrid-clear-filter-icon-fallback)) no-repeat;
+    background-size: var(--datagrid-clear-filter-icon-size, var(--datagrid-clear-filter-icon-size-fallback));
+    width: var(--datagrid-clear-filter-icon-size, var(--datagrid-clear-filter-icon-size-fallback));
+    height: 100%;
+    margin: 0;
+    top: calc(50% - var(--datagrid-clear-filter-icon-size, var(--datagrid-clear-filter-icon-size-fallback)) / 2);
+    right: calc(var(--form-control-height, var(--form-control-height-fallback)) + 6px);
+}
+& .data-grid-header .clear-filter:hover {
+    background: transparent var(--datagrid-clear-filter-hover-icon, var(--datagrid-clear-filter-hover-icon-fallback)) no-repeat;
+    background-size: var(--datagrid-clear-filter-icon-size, var(--datagrid-clear-filter-icon-size-fallback));
 }
 & .data-grid-header .data-grid-search-help-button {
     background-image: var(--datagrid-searchbox-help-icon, var(--datagrid-searchbox-help-icon-fallback));
@@ -434,6 +426,13 @@ html {
     display: flex;
     align-items: center;
 }
+& .container:not(.mobile) li > a {
+    cursor:pointer;
+    width:100%;
+    height:100%;
+    align-items:center;
+    display:flex;
+}
 & .expand-left>.dropdown-submenu>.dropdown-menu,
 & .expand-left.dropdown-submenu>.dropdown-menu,
 & .expand-right>.dropdown-submenu>.dropdown-menu,
@@ -454,6 +453,20 @@ html {
     height: var(--menu-item-height, var(--menu-item-height-fallback));
     display: flex;
     align-items: center;
+    position: relative;
+}
+& .dropdown-submenu.expand-left > a {
+    flex-direction: row-reverse;
+}
+& .dropdown-submenu.expand-left > a:after,
+& .dropdown-submenu.expand-right > a:after {
+    line-height: 0;
+}
+& .dropdown-submenu.expand-right > a:after {
+    padding-left: 4px;
+}
+& .dropdown-submenu.expand-left > a:after {
+    padding-right: 10px;
 }
 & .container:not(.mobile) .navbar.navbar-default,
 & .container:not(.mobile) .navbar.navbar-default .dropdown-menu {
@@ -462,7 +475,11 @@ html {
 & .dropdown-menu {
     padding: 0;
 }
-& .container:not(.mobile) .navbar-nav>li>a {
+& .container:not(.mobile) .navbar-nav > li > a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
     padding-top: 0;
     padding-right: var(--menu-item-right-padding, var(--menu-item-right-padding-fallback));
     padding-bottom: 0;
@@ -480,9 +497,15 @@ html {
     background-color: var(--menu-mobile-item-background-color, var(--menu-mobile-item-background-color-fallback));
     background-image: var(--menu-mobile-item-background-color, var(--menu-mobile-item-background-color-fallback));
 }
-& .hamburger>.caret,
-& .container.mobile .dropdown-submenu>a:after {
+& .hamburger > .caret,
+& .container.mobile .dropdown-submenu > a:after {
     color: var(--menu-mobile-item-icon-color, var(--menu-mobile-item-icon-color-fallback));
+}
+& .container.mobile .dropdown-submenu a {
+    position:relative;
+}
+& .container.mobile .dropdown-submenu a:after {
+    top: 50%;
 }
 & .container.mobile .navbar-left>li,
 & .container.mobile .navbar-nav>li {
@@ -653,9 +676,18 @@ html {
 & .footer {
     display: var(--stadium-footer-display, var(--stadium-footer-display-fallback));
 }
+& .header {
+    display: grid;
+    place-items: center;
+    padding: 0;
+    height: var(--profile-icon-container-height, var(--profile-icon-container-height-fallback));
+    width: var(--profile-icon-container-width, var(--profile-icon-container-width-fallback));
+}
 & .profile-icon {
+    position: inherit;
     background-image: var(--profile-icon, var(--profile-icon-fallback));
-    border-color: var(--profile-icon-border-color, var(--profile-icon-border-color-fallback))
+    border-color: var(--profile-icon-border-color, var(--profile-icon-border-color-fallback));
+    background-color: var(--profile-icon-background-color, var(--profile-icon-background-color-fallback));
 }
 & .busy-indicator-container.busy-indicator-container {
     height: var(--busy-indicator-height, var(--busy-indicator-height-fallback));

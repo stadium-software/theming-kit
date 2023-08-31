@@ -5,7 +5,7 @@
 /*For some items allowed / suggested values are indicated*/
 
 /*ICONS*/
-/*To change the colour of icons, find the the colour values in the provided base64 strings and cahnge them as you see fit.*/
+/*To change the colour of icons, find the colour values in the provided base64 strings and change them as you see fit.*/
 /*Icon colours MUST be provided as rgb or rgba, not hex!*/
 /*Icon colour values can commonly be found right after "fill%3D%27", which is base64 for "fill=". There might be multiple such values in one icon file. */
 
@@ -26,15 +26,6 @@
     /*--font-size: 14px;*/
     /*--font-size-smaller: 10px;*/
     /*--font-size-larger: 16px;*/
-
-    /*SCROLLBAR*/
-    --scrollbar-width: auto;
-    --scrollbar-height: auto;
-    /*foreground*/
-    --scrollbar-scroller-background-color: auto;
-    --scrollbar-scroller-hover-background-color: auto;
-    /*background*/
-    --scrollbar-bar-background-color: auto;
 
     /*CONTROLS*/
     /*--control-container-top-margin: 10px;*/
@@ -158,6 +149,10 @@
     /*--datagrid-table-selection-status-bar-font-color: #fff;*/
     /*--datagrid-table-selection-status-bar-font-size: 14px;*/
 
+    /*--datagrid-clear-filter-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2032.526%2032.526%22%20style%3D%22enable-background%3Anew%200%200%2032.526%2032.526%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%2220px%22%20height%3D%2220px%22%3E%3Cpolygon%20points%3D%2232.526%2C2.828%2029.698%2C0%2016.263%2C13.435%202.828%2C0%200%2C2.828%2013.435%2C16.263%200%2C29.698%202.828%2C32.526%2016.263%2C19.091%20%20%2029.698%2C32.526%2032.526%2C29.698%2019.091%2C16.263%20%22%20fill%3D%22rgba(145, 145, 145, 1)%22%2F%3E%3C%2Fsvg%3E");*/
+    /*--datagrid-clear-filter-icon-size: 12px;*/
+    /*--datagrid-clear-filter-hover-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2032.526%2032.526%22%20style%3D%22enable-background%3Anew%200%200%2032.526%2032.526%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%2220px%22%20height%3D%2220px%22%3E%3Cpolygon%20points%3D%2232.526%2C2.828%2029.698%2C0%2016.263%2C13.435%202.828%2C0%200%2C2.828%2013.435%2C16.263%200%2C29.698%202.828%2C32.526%2016.263%2C19.091%20%20%2029.698%2C32.526%2032.526%2C29.698%2019.091%2C16.263%20%22%20fill%3D%22rgba(255, 73, 0, 1)%22%2F%3E%3C%2Fsvg%3E");*/
+
     /*DATEPICKER*/
     /*--datepicker-textbox-font-color: #919191;*/
     /*--datepicker-textbox-background-color: #f9f9f9;*/
@@ -227,7 +222,7 @@
     /*--menu-item-right-padding: 15px;*/
     /*--menu-item-left-padding: 15px;*/
 
-    /*--menu-subitem-height: 26px;*/
+    /*--menu-subitem-height: 50px;*/
     /*--menu-subitem-right-padding: 20px;*/
     /*--menu-subitem-left-padding: 20px;*/
 
@@ -309,7 +304,10 @@
 
     /*PROFILE ICON*/
     /*--profile-icon: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Aa%3D%22http%3A%2F%2Fns.adobe.com%2FAdobeSVGViewerExtensions%2F3.0%2F%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20enable-background%3D%22new%200%200%2020%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cdefs%3E%3C%2Fdefs%3E%3Cpath%20fill%3D%22rgba(33, 150, 243, 1)%22%20d%3D%22M15%2C5c0%2C2.759-2.236%2C5-5%2C5c-2.76%2C0-5-2.235-5-5s2.24-5%2C5-5S15%2C2.234%2C15%2C5z%20M15.354%2C9.962%20c-1.398%2C1.391-3.281%2C2.265-5.354%2C2.265c-2.074%2C0-3.955-0.891-5.354-2.274C2.178%2C11.054%2C0%2C12.812%2C0%2C14.577c0%2C3.531%2C20%2C3.531%2C20%2C0%20C20%2C12.812%2C17.822%2C11.064%2C15.354%2C9.962z%22%2F%3E%3C%2Fsvg%3E");*/
+    /*--profile-icon-background-color: white;*/
     /*--profile-icon-border-color: #2196f3;*/
+    /*--profile-icon-container-width: 50px;*/
+    /*--profile-icon-container-height: 50px;*/
 
     /*BUSY INDICATOR*/
     /*--busy-indicator-height: 2px;*/
