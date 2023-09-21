@@ -19,7 +19,7 @@ The kit consists of a number of separate, but related CSS files
 2. *theming.css* contains CSS to apply the variables
 3. *theming-fallbacks-default-theme.css* contains the fallback variables for the Stadium default theme (Material Design Blue)
 4. *theming-fallbacks-grey-theme.css* contains the fallback variables for the Grey theme
-5. Two sample applications you can use to develop a theme
+5. Two sample applications you can use to develop a theme. These applications require the [Samples Database](https://github.com/stadium-software/samples-database)
 
 ## Customisations
 To customise a theme using this kit
