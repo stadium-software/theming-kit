@@ -1,8 +1,5 @@
 # Stadium Theming-Kit
-A set of CSS variables for making adjustments to the look and feel of Stadium applications
-
-## Description
-This kit allows for making extensive adjustments to the look and feel of Stadium applications without the need to write any CSS. 
+A set of CSS variables that allow for extensively changing the look and feel of Stadium applications without writing any CSS
 
 ## Contents
 The kit consists of a number of separate, but related CSS files. 

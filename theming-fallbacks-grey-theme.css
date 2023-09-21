@@ -88,7 +88,7 @@
     /*CHECKBOX LIST*/
     --checkboxlist-background-color-fallback: #f5f5f5;
     --checkboxlist-checkbox-label-size-fallback: 15px; 
-    --checkboxlist-checkbox-label-color-fallback: var(--font-color, var(--font-color-fallback));
+    --checkboxlist-checkbox-label-color-fallback: var(--font-color, var(--form-control-font-color-fallback));
 
     /*DATAGRID*/
     --datagrid-searchbox-font-color-fallback: var(--form-control-font-color, var(--form-control-font-color-fallback));
