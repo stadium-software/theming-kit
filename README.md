@@ -3,6 +3,10 @@ Prewritten CSS to create new themes for Stadium applications without writing any
 
 
 
+https://github.com/stadium-software/theming-kit/assets/2085324/6762e574-d2c7-4604-a8df-6adf837f5214
+
+
+
 ## Description
 This kit currently supports adjusting applications based on the Default or the Grey themes. To find out which theme an application uses, see [Application Properties](#application-properties) below
 
