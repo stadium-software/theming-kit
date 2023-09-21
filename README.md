@@ -1,10 +1,10 @@
 # Stadium Theming-Kit
-A set of CSS variables that allow for extensively changing the look and feel of Stadium applications without writing any CSS
+Prewritten CSS to create new themes for Stadium applications without writing any CSS
 
 ## Contents
 The kit consists of a number of separate, but related CSS files. 
-1. *theming-variables.css* contains a set of variables (the only file you need to make changes to)
-2. *theming.css* contains CSS instructions to apply the variables
+1. *theming-variables.css* contains a set of variables (this is the only file you need to make changes to!)
+2. *theming.css* contains CSS to apply the variables
 3. *theming-fallbacks-default-theme.css* contains the fallback variables for the Stadium default theme (Material Design Blue)
 4. *theming-fallbacks-grey-theme.css* contains the fallback variables for the Grey theme
 
@@ -13,47 +13,38 @@ To customise a theme using this kit
 1. Uncomment attributes to be customised in the *theming-variables.css* file
 2. Amend the related values as you see fit
 
-## Implementation
-
-### Stadium 6 (versions 6.6 and above)
-1. Add three CSS files to the Embedded Files of your application
-   1. Your customised *theming-variables.css* file
-   2. The *theming.css* as is
-   3. The fallback values file
-      1. The *theming-fallbacks-default-theme.css* file if your Stadium Theme is *Default*, *PinkBlue*, *Purple* or *Teal*
-      2. The *theming-fallbacks-grey-theme.css* file if your theme is *Cobalt*, *Dark*, *DarkRed*, *Forest*, *Grey*, *Orange* or *Scarlet*
-2. Paste the link tags below into the *Head* property of your application
+## Stadium 6 implementation (versions 6.6 and above)
+To implement a customised theme based on the default Material Design theme
+1. Drag the customised *theming-variables.css* file to the EmbeddedFiles in your application
+2. Drag the *theming.css* file to the EmbeddedFiles in your application
+3. Drag the *theming-fallbacks-default-theme.css* file to the EmbeddedFiles in your application
+4. Create a folder called "theme" in the EmbeddedFiles in your application
+5. Paste the link tags below into the *Head* property of your application
 ```
-<link rel="stylesheet" href="{EmbeddedFiles}/theming.css">
-<link rel="stylesheet" href="{EmbeddedFiles}/theming-variables.css">
-<link rel="stylesheet" href="{EmbeddedFiles}/theming-fallbacks-default-theme.css"> OR <link rel="stylesheet" href="{EmbeddedFiles}/theming-fallbacks-grey-theme.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/theme/theming.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-variables.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-fallbacks-default-theme.css">
 ``` 
-3. Preview your applications to see the effect of changes you made
+6. Preview your applications to see the effect of changes you made
+
+To implement a customised theme based on the Grey theme
+1. Select the Grey theme in the application properties
+2. Drag the customised *theming-variables.css* file to the EmbeddedFiles in your application
+3. Drag the *theming.css* file to the EmbeddedFiles in your application
+4. Drag the *theming-fallbacks-grey-theme.css* file to the EmbeddedFiles in your application
+5. Create a folder called "theme" in the EmbeddedFiles in your application
+6. Paste the link tags below into the *Head* property of your application
+```
+<link rel="stylesheet" href="{EmbeddedFiles}/theme/theming.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-variables.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-fallbacks-grey-theme.css">
+``` 
+7. Preview your applications to see the effect of changes you made
 
 ### Application Properties
 The *Head* and *Theme* properties can be found by 
 1. Clicking on the root node in the Application Explorer
 2. Reviewing the Application properties in the properties panel
-
-### Stadium 5
-1. Add a Javascript action into the Page.load event handler
-2. Paste the Javascript below into the Javascript action Code Editor popup
-```
-let URL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + "//";
-let el1 = document.createElement("link");
-el1.setAttribute("rel","stylesheet");
-el1.setAttribute("href",URL + "Content/EmbeddedFiles/theming.css");
-document.querySelector("head").appendChild(el1);
-let el2 = document.createElement("link");
-el2.setAttribute("rel","stylesheet");
-el2.setAttribute("href",URL + "Content/EmbeddedFiles/theming-variables.css");
-document.querySelector("head").appendChild(el2);
-let el3 = document.createElement("link");
-el3.setAttribute("rel","stylesheet");
-el3.setAttribute("href",URL + "Content/EmbeddedFiles/theming-fallbacks-default-theme.css");
-//OR el3.setAttribute("href",URL + "Content/EmbeddedFiles/theming-fallbacks-grey-theme.css");
-document.querySelector("head").appendChild(el3);
-``` 
 
 ## Upgrading
 To upgrade this module
