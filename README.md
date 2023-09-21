@@ -1,12 +1,21 @@
 # Stadium Theming-Kit
 Prewritten CSS to create new themes for Stadium applications without writing any CSS
 
+
+
+## Description
+This kit currently supports adjusting applications based on the Default or the Grey themes. To find out which theme an application uses, see [Application Properties](#application-properties) below
+
+## Version
+1.0
+
 ## Contents
-The kit consists of a number of separate, but related CSS files. 
+The kit consists of a number of separate, but related CSS files
 1. *theming-variables.css* contains a set of variables (this is the only file you need to make changes to!)
 2. *theming.css* contains CSS to apply the variables
 3. *theming-fallbacks-default-theme.css* contains the fallback variables for the Stadium default theme (Material Design Blue)
 4. *theming-fallbacks-grey-theme.css* contains the fallback variables for the Grey theme
+5. Two sample applications you can use to develop a theme
 
 ## Customisations
 To customise a theme using this kit
@@ -14,7 +23,8 @@ To customise a theme using this kit
 2. Amend the related values as you see fit
 
 ## Stadium 6 implementation (versions 6.6 and above)
-To implement a customised theme based on the default Material Design theme
+
+### Default Theme
 1. Drag the customised *theming-variables.css* file to the EmbeddedFiles in your application
 2. Drag the *theming.css* file to the EmbeddedFiles in your application
 3. Drag the *theming-fallbacks-default-theme.css* file to the EmbeddedFiles in your application
@@ -27,7 +37,7 @@ To implement a customised theme based on the default Material Design theme
 ``` 
 6. Preview your applications to see the effect of changes you made
 
-To implement a customised theme based on the Grey theme
+### Grey Theme
 1. Select the Grey theme in the application properties
 2. Drag the customised *theming-variables.css* file to the EmbeddedFiles in your application
 3. Drag the *theming.css* file to the EmbeddedFiles in your application
@@ -41,10 +51,10 @@ To implement a customised theme based on the Grey theme
 ``` 
 7. Preview your applications to see the effect of changes you made
 
-### Application Properties
-The *Head* and *Theme* properties can be found by 
-1. Clicking on the root node in the Application Explorer
-2. Reviewing the Application properties in the properties panel
+## Application Properties
+To locate the *Head* and *Theme* properties
+1. Click on the root node in the Application Explorer
+2. Review the Application properties in the properties panel
 
 ## Upgrading
 To upgrade this module
