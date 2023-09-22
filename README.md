@@ -1,11 +1,7 @@
 # Stadium Theming-Kit
 Prewritten CSS to create new themes for Stadium applications without writing any CSS
 
-
-
 https://github.com/stadium-software/theming-kit/assets/2085324/6762e574-d2c7-4604-a8df-6adf837f5214
-
-
 
 ## Description
 This kit currently supports adjusting applications based on the Default or the Grey themes. To find out which theme an application uses, see [Application Properties](#application-properties) below
@@ -25,29 +21,31 @@ The kit consists of a number of separate, but related CSS files
 To customise a theme using this kit
 1. Uncomment attributes to be customised in the *theming-variables.css* file
 2. Amend the related values as you see fit
+3. Control-specific values override general form values
 
 ## Stadium 6 implementation (versions 6.6 and above)
 
 ### Default Theme
-1. Drag the customised *theming-variables.css* file to the EmbeddedFiles in your application
-2. Drag the *theming.css* file to the EmbeddedFiles in your application
-3. Drag the *theming-fallbacks-default-theme.css* file to the EmbeddedFiles in your application
-4. Create a folder called "theme" in the EmbeddedFiles in your application
-5. Paste the link tags below into the *Head* property of your application
+1. Make sure the Default theme is selected in the [application properties](#Application-Properties)
+2. Drag the customised *theming-variables.css* file to the *EmbeddedFiles* in your application
+3. Drag the *theming.css* file to the *EmbeddedFiles* in your application
+4. Drag the *theming-fallbacks-default-theme.css* file to the *EmbeddedFiles* in your application
+5. Create a folder called "theme" in the *EmbeddedFiles* in your application
+6. Paste the link tags below into the *Head* property of your [application properties](#Application-Properties)
 ```
 <link rel="stylesheet" href="{EmbeddedFiles}/theme/theming.css">
 <link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-variables.css">
 <link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-fallbacks-default-theme.css">
 ``` 
-6. Preview your applications to see the effect of changes you made
+1. Preview your applications to see the effect of changes you made
 
 ### Grey Theme
-1. Select the Grey theme in the application properties
-2. Drag the customised *theming-variables.css* file to the EmbeddedFiles in your application
-3. Drag the *theming.css* file to the EmbeddedFiles in your application
-4. Drag the *theming-fallbacks-grey-theme.css* file to the EmbeddedFiles in your application
-5. Create a folder called "theme" in the EmbeddedFiles in your application
-6. Paste the link tags below into the *Head* property of your application
+1. Make sure the Grey theme is selected in the [application properties](#Application-Properties)
+2. Drag the customised *theming-variables.css* file to the *EmbeddedFiles* in your application
+3. Drag the *theming.css* file to the *EmbeddedFiles* in your application
+4. Drag the *theming-fallbacks-grey-theme.css* file to the *EmbeddedFiles* in your application
+5. Create a folder called "theme" in the *EmbeddedFiles* in your application
+6. Paste the link tags below into the *Head* property of your [application properties](#Application-Properties)
 ```
 <link rel="stylesheet" href="{EmbeddedFiles}/theme/theming.css">
 <link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-variables.css">
