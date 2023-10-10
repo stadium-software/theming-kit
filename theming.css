@@ -726,6 +726,25 @@ html {
     background-image: var(--notification-error-icon, var(--notification-error-icon-fallback)),
         linear-gradient(90deg, var(--notification-error-sidebar-color, var(--notification-error-sidebar-color-fallback)) var(--notification-sidebar-width, var(--notification-sidebar-width-fallback)), var(--notification-error-background-color, var(--notification-error-background-color-fallback)) var(--notification-sidebar-width, var(--notification-sidebar-width-fallback)));
 }
+& .Vue-Toastification__toast-component-body {
+    overflow: auto;
+}
+/* width */
+& .Vue-Toastification__toast-component-body::-webkit-scrollbar {
+    width: 2px;
+}
+/* Track */
+& .Vue-Toastification__toast-component-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+& .Vue-Toastification__toast-component-body::-webkit-scrollbar-thumb {
+    background: #999;
+}
+/* Handle on hover */
+& .Vue-Toastification__toast-component-body::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
 /*--Application Users & Roles----------------------------------------------------------------*/
 .admin .data-grid-container tr {
     height: auto;
