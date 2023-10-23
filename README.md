@@ -32,7 +32,7 @@ To customise a theme using this kit
 4. Drag the *theming-fallbacks-default-theme.css* file to the *EmbeddedFiles* in your application
 5. Create a folder called "theme" in the *EmbeddedFiles* in your application
 6. Paste the link tags below into the *Head* property of your [application properties](#Application-Properties)
-```
+```html
 <link rel="stylesheet" href="{EmbeddedFiles}/theme/theming.css">
 <link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-variables.css">
 <link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-fallbacks-default-theme.css">
@@ -46,7 +46,7 @@ To customise a theme using this kit
 4. Drag the *theming-fallbacks-grey-theme.css* file to the *EmbeddedFiles* in your application
 5. Create a folder called "theme" in the *EmbeddedFiles* in your application
 6. Paste the link tags below into the *Head* property of your [application properties](#Application-Properties)
-```
+```html
 <link rel="stylesheet" href="{EmbeddedFiles}/theme/theming.css">
 <link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-variables.css">
 <link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-fallbacks-grey-theme.css">
