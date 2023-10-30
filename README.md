@@ -6,6 +6,11 @@ https://github.com/stadium-software/theming-kit/assets/2085324/6762e574-d2c7-460
 ## Description
 This kit currently supports adjusting applications based on the Default or the Grey themes. To find out which theme an application uses, see [Application Properties](#application-properties) below
 
+## Sample applications
+This repo contains two Stadium 6.7 applications
+1. [Theming_Kit_Default.sapz](Stadium6/Theming_Kit_Default.sapz?raw=true)
+2. [Theming_Kit_Grey.sapz](Stadium6/Theming_Kit_Grey.sapz?raw=true)
+
 ## Version
 1.0
 
