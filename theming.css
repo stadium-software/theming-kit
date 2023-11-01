@@ -15,7 +15,7 @@ html {
 & body {
     background-color: var(--body-background-color, var(--body-background-color-fallback));
 }
-& .container {
+& .container:not(.admin) {
     padding-left: var(--stadium-application-leftright-padding, var(--stadium-application-leftright-padding-fallback));
     padding-right: var(--stadium-application-leftright-padding, var(--stadium-application-leftright-padding-fallback));
 }
@@ -391,6 +391,7 @@ html {
 & .btn-link,
 & .btn-link:hover,
 & .btn-link:focus,
+& #profile-modal a,
 & .admin .data-grid-container table.table>tbody>tr>td a,
 & .back-to-application .application-link {
     color: var(--link-color, var(--link-color-fallback));
@@ -749,5 +750,8 @@ html {
 /*--Application Users & Roles----------------------------------------------------------------*/
 .admin .data-grid-container tr {
     height: auto;
+}
+.back-to-application .application-link {
+    background-image: var(--admin-backtoapplication-arrow);
 }
 }

@@ -12,7 +12,7 @@ This repo contains two Stadium 6.7 applications
 2. [Theming_Kit_Grey.sapz](Stadium6/Theming_Kit_Grey.sapz?raw=true)
 
 ## Version
-1.0
+1.1 - fixed some bugs (thanks Ethan!)
 
 ## Contents
 The kit consists of a number of separate, but related CSS files
