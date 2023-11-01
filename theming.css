@@ -752,6 +752,6 @@ html {
     height: auto;
 }
 .back-to-application .application-link {
-    background-image: var(--admin-backtoapplication-arrow);
+    background-image: var(--admin-backtoapplication-arrow, var(--admin-backtoapplication-arrow-fallback));
 }
 }
