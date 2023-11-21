@@ -237,6 +237,7 @@
     --panel-body-padding-left-fallback: 15px;
 
     /*RADIO BUTTON LIST*/
+    --radio-button-list-font-size-fallback: 15px;
     --radio-button-list-background-color-fallback: var(--checkboxlist-background-color, var(--checkboxlist-background-color-fallback));
     --radio-button-list-item-border-color-fallback: var(--button-background-color, var(--button-background-color-fallback));
     --radio-button-list-background-fallback: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2022%2022%22%20version%3D%221.1%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2211%22%20r%3D%2210%22%20style%3D%22fill%3Argb(255,255,255)%3Bstroke-width%3A1%3Bstroke%3Argb(51, 153, 255)%3B%22%20%2F%3E%3C%2Fsvg%3E");

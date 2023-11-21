@@ -556,6 +556,7 @@ html {
 }
 /*REMOVE IMPORTANT*/
 & input[type="radio"] ~ label {
+    font-size: var(--radio-button-list-font-size-, var(--radio-button-list-font-size-fallback));
     border-color: var(--radio-button-list-item-border-color, var(--radio-button-list-item-border-color-fallback)) !important;
     background-image: var(--radio-button-list-background, var(--radio-button-list-background-fallback)) !important;
 }
