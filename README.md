@@ -35,12 +35,12 @@ To customise a theme using this kit
 2. Drag the customised *theming-variables.css* file to the *EmbeddedFiles* in your application
 3. Drag the *theming.css* file to the *EmbeddedFiles* in your application
 4. Drag the *theming-fallbacks-default-theme.css* file to the *EmbeddedFiles* in your application
-5. Create a folder called "theme" in the *EmbeddedFiles* in your application
+5. Create a folder called "Theme" in the *EmbeddedFiles* in your application
 6. Paste the link tags below into the *Head* property of your [application properties](#Application-Properties)
 ```html
-<link rel="stylesheet" href="{EmbeddedFiles}/theme/theming.css">
-<link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-variables.css">
-<link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-fallbacks-default-theme.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/Theme/theming.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/Theme/theming-variables.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/Theme/theming-fallbacks-default-theme.css">
 ``` 
 1. Preview your applications to see the effect of changes you made
 
@@ -49,12 +49,12 @@ To customise a theme using this kit
 2. Drag the customised *theming-variables.css* file to the *EmbeddedFiles* in your application
 3. Drag the *theming.css* file to the *EmbeddedFiles* in your application
 4. Drag the *theming-fallbacks-grey-theme.css* file to the *EmbeddedFiles* in your application
-5. Create a folder called "theme" in the *EmbeddedFiles* in your application
+5. Create a folder called "Theme" in the *EmbeddedFiles* in your application
 6. Paste the link tags below into the *Head* property of your [application properties](#Application-Properties)
 ```html
-<link rel="stylesheet" href="{EmbeddedFiles}/theme/theming.css">
-<link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-variables.css">
-<link rel="stylesheet" href="{EmbeddedFiles}/theme/theming-fallbacks-grey-theme.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/Theme/theming.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/Theme/theming-variables.css">
+<link rel="stylesheet" href="{EmbeddedFiles}/Theme/theming-fallbacks-grey-theme.css">
 ``` 
 7. Preview your applications to see the effect of changes you made
 
