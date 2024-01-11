@@ -73,7 +73,7 @@ To upgrade this module
 
 1. Commit your variables file
 2. Pull the latest repo
-3. If you have made changes to the *theming-variables.css* file in your local repo, merge them
+3. Merge all changes
 4. If new variables were added to the *theming-variables.css* file, change them as you see fit or ignore them
 5. Drag the updated *theming-variables.css* file into the EmbeddedFiles folder of your application
 6. Drag the *theming.css* file into the EmbeddedFiles folder of your application
