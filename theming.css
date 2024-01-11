@@ -280,6 +280,7 @@ html {
 
     & .data-grid-container>.table>thead>tr>th a:hover {
         color: var(--datagrid-table-heading-font-hover-color, var(--datagrid-table-heading-font-hover-color-fallback));
+        text-decoration: var(--datagrid-table-heading-hover-underline, var(--datagrid-table-heading-hover-underline-fallback));
     }
 
     & .data-grid-container>.table>tfoot>tr>td,
