@@ -1,3 +1,4 @@
+/*Theme Customisation Kit - Version 1.2*/
 /*Theming Kit Fallback values for the Stadium Grey Theme*/
 /*There should be no need to make any changes in this file.*/
 
@@ -63,6 +64,8 @@
     --button-font-size-fallback: var(--font-size, var(--font-size-fallback));
     --button-shadow1-fallback: none;
     --button-shadow2-fallback: none;
+    --button-rightleft-padding-fallback: 16px;
+    --button-topbottom-padding-fallback: 10px;
 
     --button-hover-background-color-fallback: #9a9a9a;
     --button-hover-font-color-fallback: #fff;

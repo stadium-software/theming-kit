@@ -1,3 +1,4 @@
+/*Theme Customisation Kit - Version 1.2*/
 /*There should be no need to make any changes in this file.*/
 /*If you need to make any such changes, you have found a bug,*/
 /*an omission or have identified an additional requirement.*/
@@ -123,6 +124,7 @@ html {
     box-shadow: var(--button-shadow1, var(--button-shadow1-fallback)), var(--button-shadow2, var(--button-shadow2-fallback));
     font-size: var(--button-font-size, var(--button-font-size-fallback));
     transition: background-color .2s,box-shadow .2s;
+    padding: var(--button-rightleft-padding, var(--button-rightleft-padding-fallback)) var(--button-topbottom-padding, var(--button-topbottom-padding-fallback));
 }
 & .btn-default,
 & .btn-default:focus,

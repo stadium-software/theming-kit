@@ -1,4 +1,4 @@
-/*Default Theme Customisation Kit*/
+/*Theme Customisation Kit - Version 1.2*/
 
 /*HOW TO*/
 /*To make theme changes, uncomment any variable in the :root element below and change the associated value as you see fit.*/
@@ -73,6 +73,8 @@
     /*--button-font-size: 14px;*/
     /*--button-shadow1: 0 3px 6px rgba(0, 0, 0, 0.16);*/
     /*--button-shadow2: 0 3px 6px rgba(0, 0, 0, 0.23);*/
+    /*--button-rightleft-padding: 6px;*/
+    /*--button-topbottom-padding: 4px;*/
 
     /*--button-hover-background-color: #1976d2;*/
     /*--button-hover-font-color: #fff;*/
