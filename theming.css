@@ -262,6 +262,8 @@ html {
     & .data-grid-container table.table>thead>tr {
         border-bottom-color: var(--datagrid-table-border-color, var(--datagrid-table-border-color-fallback));
         background-color: var(--datagrid-table-heading-row-background-color, var(--datagrid-table-heading-row-background-color-fallback));
+        /*bug fix*/
+        color: transparent;
     }
 
     & .data-grid-container>.table>thead>tr>th {
