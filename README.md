@@ -29,6 +29,9 @@ To customise a theme using this kit
 1. Uncomment attributes to be customised in the *theming-variables.css* file
 2. Amend the related values as you see fit
 3. Control-specific values override general form values
+4. Do not move variables around in the file
+5. Do not add or remove variables
+6. Do not change variable names
 
 ## Stadium 6 implementation (versions 6.6 and above)
 
@@ -68,14 +71,11 @@ To locate the *Head* and *Theme* properties
 ## Upgrading
 To upgrade this module
 
-1. Pull the latest repo
-2. If you have made changes to the *theming-variables.css* file in your local repo, merge them
-3. If new variables were added to the *theming-variables.css* file, change them as you see fit or ignore them
-4. Drag the updated *theming-variables.css* file into the EmbeddedFiles folder of your application
+1. Commit your variables file
+2. Pull the latest repo
+3. If you have made changes to the *theming-variables.css* file in your local repo, merge them
+4. If new variables were added to the *theming-variables.css* file, change them as you see fit or ignore them
+5. Drag the updated *theming-variables.css* file into the EmbeddedFiles folder of your application
 6. Drag the *theming.css* file into the EmbeddedFiles folder of your application
 7. Drag the *theming-fallbacks-default-theme.css* or *theming-fallbacks-grey-theme.css* file into the EmbeddedFiles folder of your application
 8. Select "Overwrite" when prompted in Stadium
-
-## ToDo
-1. Remove !important from theme stylesheets and from kit
-2. Remove & .page-content display bug when fixed
