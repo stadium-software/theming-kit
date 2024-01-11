@@ -273,7 +273,7 @@ html {
         color: var(--datagrid-table-heading-font-color, var(--datagrid-table-heading-font-color-fallback));
         text-transform: var(--datagrid-table-heading-case, var(--datagrid-table-heading-case-fallback));
         border: none;
-        text-decoration: underline;
+        text-decoration: var(--datagrid-table-heading-underline, var(--datagrid-table-heading-underline-fallback));
         font-size: var(--datagrid-table-heading-font-size, var(--datagrid-table-heading-font-size-fallback));
     }
 
