@@ -123,6 +123,7 @@
     --datagrid-table-heading-case-fallback: uppercase;
     --datagrid-table-heading-alignment-fallback: left;
     --datagrid-table-heading-underline-fallback: underline;
+    --datagrid-table-heading-font-weight-fallback: bold;
 
     --datagrid-table-font-color-fallback: var(--font-color, var(--font-color-fallback));
     --datagrid-table-even-rows-background-color-fallback: var(--body-background-color, var(--body-background-color-fallback));

@@ -275,6 +275,7 @@ html {
         border: none;
         text-decoration: var(--datagrid-table-heading-underline, var(--datagrid-table-heading-underline-fallback));
         font-size: var(--datagrid-table-heading-font-size, var(--datagrid-table-heading-font-size-fallback));
+        font-weight: var(--datagrid-table-heading-font-weight, var(--datagrid-table-heading-font-weight-fallback))
     }
 
     & .data-grid-container>.table>thead>tr>th a:hover {
