@@ -13,6 +13,7 @@ This repo contains two Stadium 6.7 applications
 
 ## Version
 1.1 - fixed some bugs (thanks Ethan!)
+
 1.2 - Added button padding variable; added version number to CSS files
 
 ## Contents
