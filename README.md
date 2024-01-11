@@ -28,10 +28,9 @@ The kit consists of a number of separate, but related CSS files
 To customise a theme using this kit
 1. Uncomment attributes to be customised in the *theming-variables.css* file
 2. Amend the related values as you see fit
-3. Control-specific values override general form values
-4. Do not move variables around in the file
-5. Do not add or remove variables
-6. Do not change variable names
+3. Do not move variables around in the file
+4. Do not add or remove variables
+5. Do not change variable names
 
 ## Stadium 6 implementation (versions 6.6 and above)
 
