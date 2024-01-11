@@ -861,12 +861,3 @@ html {
         background-image: var(--admin-backtoapplication-arrow, var(--admin-backtoapplication-arrow-fallback));
     }
 }
-/*Animations*/
-@keyframes inputHighlighter {
-    0% {
-        border-bottom: 1px solid var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback));
-    }
-    100% {
-        border-bottom: 2px solid var(--form-control-focus-bottom-border-color, var(--form-control-focus-bottom-border-color-fallback));
-    }
-}
