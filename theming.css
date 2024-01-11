@@ -124,7 +124,7 @@ html {
     box-shadow: var(--button-shadow1, var(--button-shadow1-fallback)), var(--button-shadow2, var(--button-shadow2-fallback));
     font-size: var(--button-font-size, var(--button-font-size-fallback));
     transition: background-color .2s,box-shadow .2s;
-    padding: var(--button-rightleft-padding, var(--button-rightleft-padding-fallback)) var(--button-topbottom-padding, var(--button-topbottom-padding-fallback));
+    padding: var(--button-topbottom-padding, var(--button-topbottom-padding-fallback)) var(--button-rightleft-padding, var(--button-rightleft-padding-fallback));
 }
 & .btn-default,
 & .btn-default:focus,
