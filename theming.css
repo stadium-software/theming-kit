@@ -321,6 +321,7 @@ html {
         font-size: var(--datagrid-table-pagination-font-size, var(--datagrid-table-pagination-font-size-fallback));
         color: var(--datagrid-table-pagination-font-color, var(--datagrid-table-pagination-font-color-fallback));
         background-color: var(--datagrid-table-pagination-background-color, var(--datagrid-table-pagination-background-color-fallback));
+        border-color: var(--datagrid-table-pagination-border-color, var(--datagrid-table-pagination-border-color-fallback));
     }
 
     & .data-grid-container .pagination>li:hover>a {
