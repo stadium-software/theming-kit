@@ -54,6 +54,7 @@
 
     --form-control-disabled-font-color-fallback: #b8b8b8;
     --form-control-disabled-background-color-fallback: #e6e6e6;
+    --form-control-disabled-cursor-fallback: not-allowed;
 
     --form-control-required-indicator-font-size-fallback: 12px;
     

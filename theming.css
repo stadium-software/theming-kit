@@ -81,6 +81,9 @@ html {
         border-left: 1px solid var(--form-control-hover-left-border-color, var(--form-control-hover-left-border-color-fallback));
     }
 
+    & .read-only-control input,
+    & .read-only-control select,
+    & .read-only-control textarea,
     & .form-control[disabled],
     & .form-control[readonly],
     & .form-control[disabled]:focus,
@@ -99,6 +102,7 @@ html {
         border-right: 1px solid var(--form-control-right-border-color, var(--form-control-right-border-color-fallback));
         border-bottom-color: var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback));
         border-left: 1px solid var(--form-control-left-border-color, var(--form-control-left-border-color-fallback));
+        cursor: var(--form-control-disabled-cursor, var(--form-control-disabled-cursor-fallback));
     }
 
     & .action-column label[disabled=disabled],
