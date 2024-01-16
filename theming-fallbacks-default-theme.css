@@ -132,6 +132,15 @@
     --datagrid-table-odd-rows-background-color-fallback: var(--form-control-background-color, var(--form-control-background-color-fallback));
     --datagrid-table-cell-padding-fallback: 8px;
 
+    --datagrid-table-link-font-size-fallback: var(--font-size, var(--font-size-fallback));
+    --datagrid-table-link-font-color-fallback: var(--link-color, var(--link-color-fallback));
+    --datagrid-table-link-font-weight-fallback: normal;
+    --datagrid-table-link-font-decoration-fallback: underline;
+    --datagrid-table-link-text-transform-fallback: none;
+
+    --datagrid-table-link-font-hover-font-color-fallback: var(--link-color, var(--link-color-fallback));
+    --datagrid-table-link-font-hover-decoration-fallback: none;
+    
     --datagrid-table-pagination-font-size-fallback: var(--font-size, var(--font-size-fallback));
     --datagrid-table-pagination-font-color-fallback: var(--form-control-font-color, var(--form-control-font-color-fallback));
     --datagrid-table-pagination-background-color-fallback: var(--body-background-color, var(--body-background-color-fallback));

@@ -140,6 +140,15 @@
     /*--datagrid-table-even-rows-background-color:#fff; */
     /*--datagrid-table-odd-rows-background-color: #f9f9f9;*/
     /*--datagrid-table-cell-padding: 8px;*/
+
+    /*--datagrid-table-link-font-size: 14px;*/
+    /*--datagrid-table-link-font-color: #1976d2;*/
+    /*--datagrid-table-link-font-weight: normal;*/
+    /*--datagrid-table-link-font-decoration: underline;*/
+    /*--datagrid-table-link-text-transform: none;*/
+
+    /*--datagrid-table-link-font-hover-font-color: #2196f3;*/
+    /*--datagrid-table-link-font-hover-decoration: none;*/
     
     /*--datagrid-table-pagination-font-size: 14px;*/
     /*--datagrid-table-pagination-font-color: #9a9a9a;*/

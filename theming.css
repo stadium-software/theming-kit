@@ -317,6 +317,21 @@ html {
         color: var(--datagrid-table-font-color, var(--datagrid-table-font-color-fallback));
     }
 
+    & .data-grid-container table.table>tbody>tr>td button,
+    & .admin .data-grid-container table.table>tbody>tr>td button {
+        font-size: var(--datagrid-table-link-font-size, var(--datagrid-table-link-font-size-fallback));
+        color: var(--datagrid-table-link-font-color, var(--datagrid-table-link-font-color-fallback));
+        font-weight: var(--datagrid-table-link-font-weight, var(--datagrid-table-link-font-weight-fallback));
+        text-decoration: var(--datagrid-table-link-font-decoration, var(--datagrid-table-link-font-decoration-fallback));
+        text-transform: var(--datagrid-table-link-text-transform, var(--datagrid-table-link-text-transform-fallback));
+    }
+
+    & .data-grid-container table.table>tbody>tr>td button:hover,
+    & .admin .data-grid-container table.table>tbody>tr>td button:hover {
+        color: var(--datagrid-table-link-font-hover-font-color, var(--datagrid-table-link-font-hover-font-color-fallback));
+        text-decoration: var(--datagrid-table-link-font-hover-decoration, var(--datagrid-table-link-font-hover-decoration-fallback));
+    }
+
     & .data-grid-container table.table>tfoot>tr>td {
         border-top-color: var(--datagrid-table-border-color, var(--datagrid-table-border-color-fallback));
     }
