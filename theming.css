@@ -692,6 +692,7 @@ html {
     & .show-password-icon,
     & .show-password-icon:hover {
         background-image: var(--textbox-password-icon, var(--textbox-password-icon-fallback));
+        background-position: center;
         right: var(--textbox-password-icon-right-position, var(--textbox-password-icon-right-position-fallback));
         top: var(--textbox-password-icon-top-position, var(--textbox-password-icon-top-position-fallback));
     }
@@ -703,6 +704,7 @@ html {
     & .hide-password-icon,
     & .hide-password-icon:hover {
         background-image: var(--textbox-hide-password-icon, var(--textbox-hide-password-icon-fallback));
+        background-position: center;
         right: var(--textbox-password-icon-right-position, var(--textbox-password-icon-right-position-fallback));
         top: var(--textbox-password-icon-top-position, var(--textbox-password-icon-top-position-fallback));
     }
