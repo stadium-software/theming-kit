@@ -285,6 +285,18 @@ html {
         font-family: var(--font-family, var(--font-family-fallback));
     }
 
+    & .data-grid-container .table[data-sortable] th[sort=asc] a,
+    & .data-grid-container .table[data-sortable] th[sort=desc] a {
+		background-position: var(--datagrid-table-sortable-icon-position, var(--datagrid-table-sortable-icon-position-fallback));
+		background-size: var(--datagrid-table-sortable-icon-size, var(--datagrid-table-sortable-icon-size-fallback));
+    }
+    & .data-grid-container .table[data-sortable] th[sort=asc] a {
+		background-image: var(--datagrid-table-sortable-icon-asc, var(--datagrid-table-sortable-icon-asc-fallback));
+    }
+    & .data-grid-container .table[data-sortable] th[sort=desc] a {
+        background-image: var(--datagrid-table-sortable-icon-desc, var(--datagrid-table-sortable-icon-desc-fallback));
+    }
+
     & .data-grid-container>.table>thead>tr>th a:hover {
         color: var(--datagrid-table-heading-font-hover-color, var(--datagrid-table-heading-font-hover-color-fallback));
         text-decoration: var(--datagrid-table-heading-hover-underline, var(--datagrid-table-heading-hover-underline-fallback));

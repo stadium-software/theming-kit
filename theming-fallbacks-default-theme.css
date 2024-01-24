@@ -127,6 +127,11 @@
     --datagrid-table-heading-font-weight-fallback: bold;
     --datagrid-table-heading-hover-underline-fallback: underline;
 
+    --datagrid-table-sortable-icon-position-fallback: center right;
+    --datagrid-table-sortable-icon-size-fallback: 8px;
+    --datagrid-table-sortable-icon-asc-fallback: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIj48cGF0aCBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTEyIDEuNjdhMi45MTQgMi45MTQgMCAwIDAtMi40OTIgMS40MDNMMS4zOTggMTYuNjFhMi45MTQgMi45MTQgMCAwIDAgMi40ODQgNC4zODVoMTYuMjI1YTIuOTE0IDIuOTE0IDAgMCAwIDIuNTAzLTQuMzcxTDE0LjQ5NCAzLjA3OEEyLjkxNyAyLjkxNyAwIDAgMCAxMiAxLjY3Ii8+PC9nPjwvc3ZnPg==);
+    --datagrid-table-sortable-icon-desc-fallback: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIj48cGF0aCBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTIwLjExOCAzSDMuODkzQTIuOTE0IDIuOTE0IDAgMCAwIDEuMzkgNy4zNzFMOS41MDYgMjAuOTJhMi45MTcgMi45MTcgMCAwIDAgNC45ODcuMDA1bDguMTEtMTMuNTM5QTIuOTE0IDIuOTE0IDAgMCAwIDIwLjExNyAzeiIvPjwvZz48L3N2Zz4=);
+
     --datagrid-table-font-color-fallback: var(--font-color, var(--font-color-fallback));
     --datagrid-table-even-rows-background-color-fallback: var(--body-background-color, var(--body-background-color-fallback));
     --datagrid-table-odd-rows-background-color-fallback: var(--form-control-background-color, var(--form-control-background-color-fallback));
