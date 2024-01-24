@@ -780,6 +780,7 @@ html {
     & .modal-content {
         background-color: var(--modal-dialog-background-color, var(--modal-dialog-background-color-fallback));
         border-color: var(--modal-dialog-border-color, var(--modal-dialog-border-color-fallback));
+        border-radius: var(--modal-dialog-border-radius, var(--modal-dialog-border-radius-fallback));
     }
 
     & .dialog-message {
