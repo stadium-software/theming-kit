@@ -705,24 +705,20 @@ html {
     & .show-password-icon:hover {
         background-image: var(--textbox-password-icon, var(--textbox-password-icon-fallback));
         background-position: center;
+        background-color: var(--textbox-password-icon-background-color, var(--textbox-password-icon-background-color-fallback));
+        border: var(--textbox-password-icon-border-width, var(--textbox-password-icon-border-width-fallback)) solid var(--textbox-password-icon-border-color, var(--textbox-password-icon-border-color-fallback));
+        border-radius: var(--textbox-password-icon-border-radius, var(--textbox-password-icon-border-radius-fallback));
         right: var(--textbox-password-icon-right-position, var(--textbox-password-icon-right-position-fallback));
         top: var(--textbox-password-icon-top-position, var(--textbox-password-icon-top-position-fallback));
     }
 
     & .show-password-icon:hover {
-        opacity: 0.6;
+        opacity: var(--textbox-password-icon-hover-opacity, var(--textbox-password-icon-hover-opacity-fallback));
     }
 
     & .hide-password-icon,
     & .hide-password-icon:hover {
         background-image: var(--textbox-hide-password-icon, var(--textbox-hide-password-icon-fallback));
-        background-position: center;
-        right: var(--textbox-password-icon-right-position, var(--textbox-password-icon-right-position-fallback));
-        top: var(--textbox-password-icon-top-position, var(--textbox-password-icon-top-position-fallback));
-    }
-
-    & .hide-password-icon:hover {
-        opacity: 0.6;
     }
 
     & .password-control {
