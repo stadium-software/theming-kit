@@ -293,6 +293,7 @@
     --textbox-password-icon-border-width-fallback: 0px;
     --textbox-password-icon-border-color-fallback: transparent;
     --textbox-password-icon-hover-opacity-fallback: 1;
+    --textbox-password-icon-hover-background-color-fallback: transparent;
 
     /*UPLOAD FILE*/
     --upload-file-box-font-color-fallback: var(--button-hover-background-color, var(--button-hover-background-color-fallback));

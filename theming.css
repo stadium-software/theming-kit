@@ -714,6 +714,7 @@ html {
 
     & .show-password-icon:hover {
         opacity: var(--textbox-password-icon-hover-opacity, var(--textbox-password-icon-hover-opacity-fallback));
+        background-color: var(--textbox-password-icon-hover-background-color, var(--textbox-password-icon-hover-background-color-fallback));
     }
 
     & .hide-password-icon,
