@@ -201,12 +201,15 @@
 
     /*DROPDOWN*/
     --dropdown-background-color-fallback: var(--form-control-background-color, var(--form-control-background-color-fallback));
-    --dropdown-bottom-border-color-fallback: var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback));
-    --dropdown-background-color-fallback: var(--form-control-background-color, var(--form-control-background-color-fallback));
     --dropdown-top-border-color-fallback: var(--form-control-top-border-color, var(--form-control-top-border-color-fallback));
     --dropdown-right-border-color-fallback: var(--form-control-right-border-color, var(--form-control-right-border-color-fallback));
     --dropdown-bottom-border-color-fallback: var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback));
     --dropdown-left-border-color-fallback: var(--form-control-left-border-color, var(--form-control-left-border-color-fallback));
+
+    --dropdown-background-image-fallback: linear-gradient(45deg, transparent 50%, #6f6f6f 50%), linear-gradient(135deg, #6f6f6f 50%, transparent 50%);
+    --dropdown-background-repeat-fallback: no-repeat;
+    --dropdown-background-size-fallback: 5px 5px, 5px 5px, 1px 18px;
+    --dropdown-background-position-fallback: calc(100% - 15px) 50%, calc(100% - 10px) 50%;
 
     --dropdown-hover-background-color-fallback: var(--form-control-hover-background-color, var(--form-control-hover-background-color-fallback));
     --dropdown-hover-top-border-color-fallback: var(--form-control-hover-top-border-color, var(--form-control-hover-top-border-color-fallback));

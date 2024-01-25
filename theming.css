@@ -452,7 +452,10 @@ html {
         border-right-color: var(--dropdown-right-border-color, var(--dropdown-right-border-color-fallback));
         border-bottom-color: var(--dropdown-bottom-border-color, var(--dropdown-bottom-border-color-fallback));
         border-left-color: var(--dropdown-left-border-color, var(--dropdown-left-border-color-fallback));
-        background-position: calc(100% - 15px) 50%, calc(100% - 10px) 50%;
+        background-position: var(--dropdown-background-position, var(--dropdown-background-position-fallback));
+        background-image: var(--dropdown-background-image, var(--dropdown-background-image-fallback));
+        background-size: var(--dropdown-background-size, var(--dropdown-background-size-fallback));
+        background-repeat: var(--dropdown-background-repeat, var(--dropdown-background-repeat-fallback));
     }
 
     & .drop-down-container select.form-control:hover {
