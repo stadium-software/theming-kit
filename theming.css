@@ -868,6 +868,10 @@ html {
             linear-gradient(90deg, var(--notification-error-sidebar-color, var(--notification-error-sidebar-color-fallback)) var(--notification-sidebar-width, var(--notification-sidebar-width-fallback)), var(--notification-error-background-color, var(--notification-error-background-color-fallback)) var(--notification-sidebar-width, var(--notification-sidebar-width-fallback)));
     }
 
+    & .Vue-Toastification__container.top-right {
+        top: var(--notification-top-position, var(--notification-top-position-fallback));
+    }
+
     & .Vue-Toastification__toast-component-body {
         overflow: auto;
     }

@@ -342,6 +342,7 @@
     /*NOTIFICATIONS*/
     --notification-font-size-fallback: 14px;
     --notification-font-color-fallback: #333;
+    --notification-top-position-fallback: 1rem;
 
     --notification-sidebar-width-fallback: 6px;
 
