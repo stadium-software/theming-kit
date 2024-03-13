@@ -16,6 +16,8 @@ This repo contains two Stadium 6.7 applications
 
 1.2 - Added button padding variable; added version number to CSS files
 
+1.3 - Fixed a grey theme bug; added border color and width variables; changed some fallback values to match the themes
+
 ## Contents
 The kit consists of a number of separate, but related CSS files
 1. *theming-variables.css* contains a set of variables (this is the only file you need to make changes to!)
