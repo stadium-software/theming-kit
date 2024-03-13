@@ -1,4 +1,4 @@
-/*Theme Customisation Kit - Version 1.2*/
+/*Theme Customisation Kit - Version 1.3*/
 /*Theming Kit Fallback values for the Stadium Grey Theme*/
 /*There should be no need to make any changes in this file.*/
 
@@ -23,7 +23,7 @@
     --control-container-right-padding-fallback: 16px;
 
     /*FORM CONTROLS*/
-    --form-control-width-fallback: 350px;
+    --form-control-width-fallback: 300px;
     --form-control-height-fallback: 38px;
     --form-control-topbottom-padding-fallback: 8px;
     --form-control-leftright-padding-fallback: 12px;
@@ -31,6 +31,7 @@
     --form-control-font-color-fallback: #919191;
     --form-control-background-color-fallback: #fff;
 
+    --form-control-border-width-fallback: 1px;
     --form-control-top-border-color-fallback: #ccc;
     --form-control-right-border-color-fallback: #ccc;
     --form-control-bottom-border-color-fallback: #ccc;
@@ -51,10 +52,17 @@
 
     --form-control-selected-font-color-fallback: var(--body-background-color, var(--body-background-color-fallback));
     --form-control-selected-background-color-fallback: var(--button-border-color, var(--button-border-color-fallback));
+    --form-control-focus-border-width-fallback: 1px;
 
     --form-control-disabled-font-color-fallback: #b8b8b8;
     --form-control-disabled-background-color-fallback: #e6e6e6;
     --form-control-disabled-cursor-fallback: not-allowed;
+
+    --form-control-error-border-width-fallback: 2px;
+    --form-control-error-top-border-color-fallback: #ccc;
+    --form-control-error-right-border-color-fallback: #ccc;
+    --form-control-error-bottom-border-color-fallback: #ff4900;
+    --form-control-error-left-border-color-fallback: #ccc;
 
     --form-control-required-indicator-font-size-fallback: 12px;
 
@@ -168,12 +176,15 @@
     --datepicker-textbox-font-color-fallback: var(--form-control-font-color, var(--form-control-font-color-fallback));
     --datepicker-textbox-background-color-fallback: var(--form-control-background-color, var(--form-control-background-color-fallback));
 
+    --datepicker-textbox-border-width-fallback: var(--form-control-border-width, var(--form-control-border-width-fallback));
     --datepicker-textbox-top-border-color-fallback: var(--form-control-top-border-color, var(--form-control-top-border-color-fallback));
     --datepicker-textbox-right-border-color-fallback: var(--form-control-right-border-color, var(--form-control-right-border-color-fallback));
     --datepicker-textbox-bottom-border-color-fallback: var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback));
     --datepicker-textbox-left-border-color-fallback: var(--form-control-left-border-color, var(--form-control-left-border-color-fallback));
 
     --datepicker-textbox-focus-background-color-fallback: var(--form-control-focus-background-color, var(--form-control-focus-background-color-fallback));
+    --datepicker-textbox-focus-border-width-fallback: var(--form-control-border-width, var(--form-control-border-width-fallback));
+    --datepicker-textbox-focus-border-animation-fallback: var(--datepicker-textbox-focus-border-animation, none);
     --datepicker-textbox-focus-top-border-color-fallback: var(--form-control-focus-top-border-color, var(--form-control-focus-top-border-color-fallback));
     --datepicker-textbox-focus-right-border-color-fallback: var(--form-control-focus-right-border-color, var(--form-control-focus-right-border-color-fallback));
     --datepicker-textbox-focus-bottom-border-color-fallback: var(--form-control-focus-bottom-border-color, var(--form-control-focus-bottom-border-color-fallback));
@@ -185,7 +196,13 @@
     --datepicker-textbox-hover-bottom-border-color-fallback: var(--form-control-hover-bottom-border-color, var(--form-control-hover-bottom-border-color-fallback));
     --datepicker-textbox-hover-left-border-color-fallback: var(--form-control-hover-left-border-color, var(--form-control-hover-left-border-color-fallback));
 
-    --datepicker-textbox-disabled-font-color-fallback: var(--form-control-font-color, var(--form-control-font-color-fallback));
+    --datepicker-textbox-disabled-font-color-fallback: var(--form-control-disabled-font-color, var(--form-control-disabled-font-color-fallback));
+    --datepicker-textbox-disabled-background-color-fallback:var(--form-control-disabled-background-color, var(--form-control-disabled-background-color-fallback));
+    --datepicker-textbox-disabled-top-border-color-fallback: var(--form-control-top-border-color, var(--form-control-top-border-color-fallback));
+    --datepicker-textbox-disabled-right-border-color-fallback: var(--form-control-right-border-color, var(--form-control-right-border-color-fallback));
+    --datepicker-textbox-disabled-bottom-border-color-fallback: var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback));
+    --datepicker-textbox-disabled-left-border-color-fallback: var(--form-control-left-border-color, var(--form-control-left-border-color-fallback));
+    --datepicker-textbox-disabled-cursor-fallnack: var(--form-control-disabled-cursor, --form-control-disabled-cursor-fallback);
 
     --datepicker-textbox-button-background-color-fallback: var(--button-background-color, var(--button-background-color-fallback));
     --datepicker-textbox-button-border-color-fallback: var(--button-border-color, var(--button-border-color-fallback));
@@ -281,6 +298,7 @@
     --textbox-bottom-hover-border-color-fallback: var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback));
     --textbox-left-hover-border-color-fallback: var(--form-control-left-border-color, var(--form-control-left-border-color-fallback));
     
+    --textbox-focus-border-animation-fallback: var(--textbox-focus-border-animation, none);
     --textbox-top-focus-border-color-fallback: var(--form-control-focus-top-border-color, var(--form-control-focus-top-border-color-fallback));
     --textbox-right-focus-border-color-fallback: var(--form-control-focus-right-border-color, var(--form-control-focus-right-border-color-fallback));
     --textbox-bottom-focus-border-color-fallback: var(--form-control-focus-bottom-border-color, var(--form-control-focus-bottom-border-color-fallback));

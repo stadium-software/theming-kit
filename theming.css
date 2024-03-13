@@ -1,4 +1,4 @@
-/*Theme Customisation Kit - Version 1.2*/
+/*Theme Customisation Kit - Version 1.3*/
 /*There should be no need to make any changes in this file.*/
 /*If you need to make any such changes, you have found a bug,*/
 /*an omission or have identified an additional requirement.*/
@@ -47,38 +47,48 @@ html {
 
     /*--FormControls-------------------------------------------------------------------*/
     & .form-control {
-        width: var(--form-control-width, var(--form-control-width-fallback));
         height: var(--form-control-height, var(--form-control-height-fallback));
         padding: var(--form-control-topbottom-padding, var(--form-control-topbottom-padding-fallback)) var(--form-control-leftright-padding, var(--form-control-leftright-padding-fallback));
         font-size: var(--form-control-font-size, var(--form-control-font-size-fallback));
         color: var(--form-control-font-color, var(--form-control-font-color-fallback));
 
         background-color: var(--form-control-background-color, var(--form-control-background-color-fallback));
-        border-top: 1px solid var(--form-control-top-border-color, var(--form-control-top-border-color-fallback));
-        border-right: 1px solid var(--form-control-right-border-color, var(--form-control-right-border-color-fallback));
+        border-top: var(--form-control-border-width, var(--form-control-border-width-fallback)) solid var(--form-control-top-border-color, var(--form-control-top-border-color-fallback));
+        border-right: var(--form-control-border-width, var(--form-control-border-width-fallback)) solid var(--form-control-right-border-color, var(--form-control-right-border-color-fallback));
         border-bottom-color: var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback));
-        border-left: 1px solid var(--form-control-left-border-color, var(--form-control-left-border-color-fallback));
+        border-bottom-width: var(--form-control-border-width, var(--form-control-border-width-fallback));
+        border-left: var(--form-control-border-width, var(--form-control-border-width-fallback)) solid var(--form-control-left-border-color, var(--form-control-left-border-color-fallback));
         transition: var(--form-control-bottom-border-transition, var(--form-control-bottom-border-transition-fallback));
+    }
+
+    & .form-control,
+    & .date-picker-container .mx-datepicker {
+        width: var(--form-control-width, var(--form-control-width-fallback));
     }
 
     & .form-control:focus,
     & .date-picker-container .form-control:focus,
-    & .drop-down-container .form-control:focus {
+    & .drop-down-container .form-control:focus,
+    & .form-control:focus:hover,
+    & .date-picker-container .form-control:focus:hover,
+    & .drop-down-container .form-control:focus:hover {
         background-color: var(--form-control-focus-background-color, var(--form-control-focus-background-color-fallback));
-        border-top: 1px solid var(--form-control-focus-top-border-color, var(--form-control-focus-top-border-color-fallback));
-        border-right: 1px solid var(--form-control-focus-right-border-color, var(--form-control-focus-right-border-color-fallback));
+        border-top: var(--form-control-border-width, var(--form-control-border-width-fallback)) solid var(--form-control-focus-top-border-color, var(--form-control-focus-top-border-color-fallback));
+        border-right: var(--form-control-border-width, var(--form-control-border-width-fallback)) solid var(--form-control-focus-right-border-color, var(--form-control-focus-right-border-color-fallback));
         border-bottom-color: var(--form-control-focus-bottom-border-color, var(--form-control-focus-bottom-border-color-fallback));
-        border-left: 1px solid var(--form-control-focus-left-border-color, var(--form-control-focus-left-border-color-fallback));
+        border-bottom-width: var(--form-control-focus-border-width, var(--form-control-focus-border-width-fallback));
+        border-left: var(--form-control-border-width, var(--form-control-border-width-fallback)) solid var(--form-control-focus-left-border-color, var(--form-control-focus-left-border-color-fallback));
     }
 
     & .form-control:hover,
     & .date-picker-container .form-control:hover,
     & .drop-down-container .form-control:hover {
         background-color: var(--form-control-hover-background-color, var(--form-control-hover-background-color-fallback));
-        border-top: 1px solid var(--form-control-hover-top-border-color, var(--form-control-hover-top-border-color-fallback));
-        border-right: 1px solid var(--form-control-hover-right-border-color, var(--form-control-hover-right-border-color-fallback));
+        border-top: var(--form-control-border-width, var(--form-control-border-width-fallback)) solid var(--form-control-hover-top-border-color, var(--form-control-hover-top-border-color-fallback));
+        border-right: var(--form-control-border-width, var(--form-control-border-width-fallback)) solid var(--form-control-hover-right-border-color, var(--form-control-hover-right-border-color-fallback));
         border-bottom-color: var(--form-control-hover-bottom-border-color, var(--form-control-hover-bottom-border-color-fallback));
-        border-left: 1px solid var(--form-control-hover-left-border-color, var(--form-control-hover-left-border-color-fallback));
+        border-bottom-width: var(--form-control-border-width, var(--form-control-border-width-fallback));
+        border-left: var(--form-control-border-width, var(--form-control-border-width-fallback)) solid var(--form-control-hover-left-border-color, var(--form-control-hover-left-border-color-fallback));
     }
 
     & .read-only-control input,
@@ -98,11 +108,13 @@ html {
     & .drop-down-container .form-control[readonly]:hover {
         color: var(--form-control-disabled-font-color, var(--form-control-disabled-font-color-fallback));
         background-color: var(--form-control-disabled-background-color, var(--form-control-disabled-background-color-fallback));
-        border-top: 1px solid var(--form-control-top-border-color, var(--form-control-top-border-color-fallback));
-        border-right: 1px solid var(--form-control-right-border-color, var(--form-control-right-border-color-fallback));
+        border-top: var(--form-control-border-width, var(--form-control-border-width-fallback)) solid var(--form-control-top-border-color, var(--form-control-top-border-color-fallback));
+        border-right: var(--form-control-border-width, var(--form-control-border-width-fallback)) solid var(--form-control-right-border-color, var(--form-control-right-border-color-fallback));
         border-bottom-color: var(--form-control-bottom-border-color, var(--form-control-bottom-border-color-fallback));
-        border-left: 1px solid var(--form-control-left-border-color, var(--form-control-left-border-color-fallback));
+        border-bottom-width: var(--form-control-border-width, var(--form-control-border-width-fallback));
+        border-left: var(--form-control-border-width, var(--form-control-border-width-fallback)) solid var(--form-control-left-border-color, var(--form-control-left-border-color-fallback));
         cursor: var(--form-control-disabled-cursor, var(--form-control-disabled-cursor-fallback));
+        animation: none;
     }
 
     & .action-column label[disabled=disabled],
@@ -385,18 +397,19 @@ html {
     & .date-picker-container input {
         color: var(--datepicker-textbox-font-color, var(--datepicker-textbox-font-color-fallback));
         background-color: var(--datepicker-textbox-background-color, var(--datepicker-textbox-background-color-fallback));
-        border-top-color: var(--datepicker-textbox-top-border-color, var(--datepicker-textbox-top-border-color-fallback));
-        border-right-color: var(--datepicker-textbox-right-border-color, var(--datepicker-textbox-right-border-color-fallback));
-        border-bottom-color: var(--datepicker-textbox-bottom-border-color, var(--datepicker-textbox-bottom-border-color-fallback));
-        border-left-color: var(--datepicker-textbox-left-border-color, var(--datepicker-textbox-left-border-color-fallback));
+        border-top: var(--datepicker-textbox-border-width, var(--datepicker-textbox-border-width-fallback)) solid var(--datepicker-textbox-top-border-color, var(--datepicker-textbox-top-border-color-fallback));
+        border-right: var(--datepicker-textbox-border-width, var(--datepicker-textbox-border-width-fallback)) solid var(--datepicker-textbox-right-border-color, var(--datepicker-textbox-right-border-color-fallback));
+        border-bottom: var(--datepicker-textbox-border-width, var(--datepicker-textbox-border-width-fallback)) solid var(--datepicker-textbox-bottom-border-color, var(--datepicker-textbox-bottom-border-color-fallback));
+        border-left: var(--datepicker-textbox-border-width, var(--datepicker-textbox-border-width-fallback)) solid var(--datepicker-textbox-left-border-color, var(--datepicker-textbox-left-border-color-fallback));
     }
 
     & .date-picker-container input.form-control:focus {
         background-color: var(--datepicker-textbox-focus-background-color, var(--datepicker-textbox-focus-background-color-fallback));
-        border-top-color: var(--datepicker-textbox-focus-top-border-color, var(--datepicker-textbox-focus-top-border-color-fallback));
-        border-right-color: var(--datepicker-textbox-focus-right-border-color, var(--datepicker-textbox-focus-right-border-color-fallback));
-        border-bottom-color: var(--datepicker-textbox-focus-bottom-border-color, var(--datepicker-textbox-focus-bottom-border-color-fallback));
-        border-left-color: var(--datepicker-textbox-focus-left-border-color, var(--datepicker-textbox-focus-left-border-color-fallback));
+        border-top: var(--datepicker-textbox-focus-border-width, var(--datepicker-textbox-focus-border-width-fallback)) solid var(--datepicker-textbox-top-border-color, var(--datepicker-textbox-top-border-color-fallback));
+        border-right: var(--datepicker-textbox-focus-border-width, var(--datepicker-textbox-focus-border-width-fallback)) solid var(--datepicker-textbox-right-border-color, var(--datepicker-textbox-right-border-color-fallback));
+        border-bottom: var(--datepicker-textbox-focus-border-width, var(--datepicker-textbox-focus-border-width-fallback)) solid var(--datepicker-textbox-bottom-border-color, var(--datepicker-textbox-bottom-border-color-fallback));
+        border-left: var(--datepicker-textbox-focus-border-width, var(--datepicker-textbox-focus-border-width-fallback)) solid var(--datepicker-textbox-left-border-color, var(--datepicker-textbox-left-border-color-fallback));
+        animation: var(--datepicker-textbox-focus-border-animation, var(--datepicker-textbox-focus-border-animation-fallback));
     }
 
     & .date-picker-container input.form-control:hover {
@@ -409,6 +422,12 @@ html {
 
     & .date-picker-container input[disabled] {
         color: var(--datepicker-textbox-disabled-font-color, var(--datepicker-textbox-disabled-font-color-fallback));
+        background-color: var(--datepicker-textbox-disabled-background-color, var(--datepicker-textbox-disabled-background-color-fallback));
+        border-top-color: var(--datepicker-textbox-disabled-top-border-color, var(--datepicker-textbox-disabled-top-border-color-fallback));
+        border-right-color: var(--datepicker-textbox-disabled-right-border-color, var(--datepicker-textbox-disabled-right-border-color-fallback));
+        border-bottom-color: var(--datepicker-textbox-disabled-bottom-border-color, var(--datepicker-textbox-disabled-bottom-border-color-fallback));
+        border-left-color: var(--datepicker-textbox-disabled-left-border-color, var(--datepicker-textbox-disabled-left-border-color-fallback));
+        cursor: var(--datepicker-textbox-disabled-cursor, var(--datepicker-textbox-disabled-cursor-fallback));
     }
 
     & .date-picker-container .datepicker-btn {
@@ -702,6 +721,7 @@ html {
         border-right-color: var(--textbox-right-focus-border-color, var(--textbox-right-focus-border-color-fallback));
         border-bottom-color: var(--textbox-bottom-focus-border-color, var(--textbox-bottom-focus-border-color-fallback));
         border-left-color: var(--textbox-left-focus-border-color, var(--textbox-left-focus-border-color-fallback));
+        animation: var(--textbox-focus-border-animation, var(--textbox-focus-border-animation-fallback));
     }
 
     & .show-password-icon,
@@ -776,7 +796,10 @@ html {
     & .has-validation-error .error-border,
     & .has-validation-error .error-border:active,
     & .has-validation-error .error-border:focus {
-        border-bottom-color: var(--validation-error-color, var(--validation-error-color-fallback));
+        border-top: var(--form-control-error-border-width, var(--form-control-error-border-width-fallback)) solid var(--form-control-error-top-border-color, var(--form-control-error-top-border-color-fallback));
+        border-right: var(--form-control-error-border-width, var(--form-control-error-border-width-fallback)) solid var(--form-control-error-right-border-color, var(--form-control-error-right-border-color-fallback));
+        border-bottom: var(--form-control-error-border-width, var(--form-control-error-border-width-fallback)) solid var(--form-control-error-bottom-border-color, var(--form-control-error-bottom-border-color-fallback));
+        border-left: var(--form-control-error-border-width, var(--form-control-error-border-width-fallback)) solid var(--form-control-error-left-border-color, var(--form-control-error-left-border-color-fallback));
     }
 
     & .upload-file-container .single-file-upload-container.file-validation-error .single-file-upload-filename,
