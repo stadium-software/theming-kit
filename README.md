@@ -2,12 +2,12 @@
 Create or adjust Stadium themes without writing any CSS
 
 ## Description
-This kit supports changing a variety of application styles for Stadium versions before 6.12 and 6.12 or higher. 
+This kit supports changing a variety of application styles for Stadium version 6.12 or higher.
+
+For applications created in Designers pre 6.12, please use [this version](/pre6.12)
 
 ## Version
 2.0 - Use version 2+ of this kit for applications created in Stadium 6.12+
-
-For applications created in Designers pre 6.12, please use [this version](/pre6.12)
 
 ## Customisations
 To customise a theme using this kit

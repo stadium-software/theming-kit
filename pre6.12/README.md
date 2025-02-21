@@ -1,5 +1,7 @@
-# Stadium Theming-Kit
+# Stadium Theming-Kit Pre Stadium 6.12
 Prewritten CSS to create new themes for Stadium applications without writing any CSS
+
+**Use this repo for Stadium versions before 6.12** for 6.12 and above [use this version](/)
 
 https://github.com/stadium-software/theming-kit/assets/2085324/6762e574-d2c7-4604-a8df-6adf837f5214
 
