@@ -18,7 +18,7 @@ To customise a theme using this kit
 5. **Do not** add or remove variables
 6. **Do not** change variable names
 
-## Setup
+## Implementation
 1. Create a folder called "CSS" in your "EmbeddedFiles" folder
 2. Drag the customised *theming-variables.css* file to the "CSS" folder in the *EmbeddedFiles* in your application
 3. Paste the link tag below into the *Head* property of your application properties
