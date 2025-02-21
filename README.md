@@ -9,7 +9,7 @@ For applications created in Designers pre 6.12, please use [this version](/pre6.
 ## Version
 2.0 - Use version 2+ of this kit for applications created in Stadium 6.12+
 
-## Customisations
+## Customizing a Theme
 To customise a theme using this kit
 1. Open the *theming-variables.css* file in an editor of your choice
 2. Uncomment variables in the *theming-variables.css* file you want to customise
