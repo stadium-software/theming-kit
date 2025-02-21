@@ -29,7 +29,7 @@ To customise a theme using this kit
 ![](images/ApplicationHeadProp.png)
 
 7. Preview your applications to see the effect of changes you made
-8. Change more variables and *Overwrite* the *theming-variables.css* file in the "CSS" folder
+8. Change more variables and *overwrite* the *theming-variables.css* file in the "CSS" folder
 
 ### CSS Upgrading
 To upgrade the CSS in this module, follow the [steps outlined in this repo](https://github.com/stadium-software/samples-upgrading)
